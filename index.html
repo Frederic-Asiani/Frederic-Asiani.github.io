@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frederic Asiani — Portfolio</title>
+  <meta name="description" content="Portfolio de Frederic Asiani — développeur web. Projets, compétences et contact." />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23007acc'/%3E%3Ctext x='50' y='56' font-size='44' text-anchor='middle' fill='white' font-family='Arial'%3EF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/135480796?v=4" alt="Avatar Frederic Asiani">
+      <h1>Frederic Asiani</h1>
+      <p class="tagline">Développeur web — JavaScript, Python — Conception d'applications et sites modernes</p>
+      <nav class="actions">
+        <a href="#projets" class="btn">Projets</a>
+        <a href="#contact" class="btn ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>Je crée des applications web modernes et performantes. J'aime transformer des idées en produits réels en utilisant des technologies web actuelles et de bonnes pratiques de développement.</p>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div id="projects-list" class="grid">
+        <!-- Les projets seront chargés via l'API GitHub, ou affichés des placeholders si l'appel échoue. -->
+      </div>
+      <p class="hint">Si tu veux personnaliser la liste, modifie index.html ou rends tes repositories publics.</p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>JavaScript / TypeScript</li>
+        <li>HTML & CSS / Responsive Design</li>
+        <li>Node.js / Express</li>
+        <li>Python / Django / Flask</li>
+        <li>Git & GitHub</li>
+        <li>Deployment (Vercel, Netlify, GitHub Pages)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Tu peux me contacter directement : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+      <p>Profil GitHub : <a href="https://github.com/Frederic-Asiani">github.com/Frederic-Asiani</a></p>
+      <p>LinkedIn : <a href="#">(Ajouter ton lien LinkedIn)</a></p>
+      <p><a class="btn" href="resume.pdf" download>Télécharger le CV</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Site généré automatiquement — dépôt Frederic-Asiani · <a href="https://github.com/Frederic-Asiani/Frederic-Asiani">Voir le repo</a></div>
+  </footer>
+
+  <script>
+    // Charge les repos GitHub et insère quelques projets automatiquement.
+    async function loadRepos() {
+      const container = document.getElementById('projects-list');
+      const user = 'Frederic-Asiani';
+      try {
+        const res = await fetch(`https://api.github.com/users/${user}/repos?per_page=12&sort=updated`);
+        if (!res.ok) throw new Error('API error');
+        const repos = await res.json();
+        if (!repos.length) throw new Error('No repos');
+        // Exclure le repo de profil s'il existe
+        const filtered = repos.filter(r => !r.name.toLowerCase().includes('frederic-asiani')).slice(0,6);
+        filtered.forEach(repo => {
+          const el = document.createElement('article');
+          el.className = 'card';
+          el.innerHTML = `
+            <h3><a href="${repo.html_url}" target="_blank" rel="noopener">${repo.name}</a></h3>
+            <p>${repo.description || 'Description à ajouter.'}</p>
+            <p class="meta">⭐ ${repo.stargazers_count} · ${repo.language || '—'}</p>
+          `;
+          container.appendChild(el);
+        });
+        if (!filtered.length) throw new Error('No visible repos');
+      } catch (e) {
+        // Placeholders si l'appel échoue
+        container.innerHTML = `
+          <article class="card"><h3>Projet A</h3><p>Une brève description du projet A.</p></article>
+          <article class="card"><h3>Projet B</h3><p>Une brève description du projet B.</p></article>
+          <article class="card"><h3>Projet C</h3><p>Une brève description du projet C.</p></article>
+        `;
+      }
+    }
+    loadRepos();
+  </script>
+</body>
+</html>
