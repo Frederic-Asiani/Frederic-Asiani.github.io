@@ -1,4 +1,4 @@
-Portfolio — Frederic Asiani
+#Portfolio — Frederic Asiani
 
 Ce dépôt contient un site portfolio statique présentant mon profil professionnel, mes compétences et mes projets dans les domaines du développement web, de la data et de l’analyse.
 
