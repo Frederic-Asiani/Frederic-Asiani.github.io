@@ -1,6 +1,5 @@
 /* ==========================================
-   FREDERIC ASIANI — PREMIUM SENIOR PORTFOLIO
-   Inspired by modern engineering portfolios
+   FREDERIC ASIANI — PREMIUM PORTFOLIO CSS
 ========================================== */
 
 :root{
@@ -43,6 +42,7 @@ html{
 }
 
 body{
+
   font-family:"Inter",sans-serif;
 
   background:var(--bg);
@@ -53,6 +53,7 @@ body{
   overflow-x:hidden;
 
   -webkit-font-smoothing:antialiased;
+
 }
 
 /* ==========================================
@@ -86,6 +87,7 @@ section{
 ========================================== */
 
 body::before{
+
   content:"";
 
   position:fixed;
@@ -104,9 +106,11 @@ body::before{
     );
 
   z-index:-2;
+
 }
 
 body::after{
+
   content:"";
 
   position:fixed;
@@ -125,9 +129,10 @@ body::after{
 
   background-size:60px 60px;
 
+  opacity:.25;
+
   z-index:-1;
 
-  opacity:.25;
 }
 
 /* ==========================================
@@ -614,19 +619,15 @@ body::after{
 }
 
 .hero-avatar img:hover{
-
   transform:translateY(-10px);
-
 }
 
 /* ==========================================
-   SECTION TITLES
+   SECTION HEADINGS
 ========================================== */
 
 .section-heading{
-
   margin-bottom:70px;
-
 }
 
 .section-heading.center{
@@ -775,9 +776,7 @@ body::after{
 }
 
 .project-card:hover .project-image img{
-
   transform:scale(1.08);
-
 }
 
 .project-content{
@@ -982,6 +981,99 @@ body::after{
 }
 
 /* ==========================================
+   GITHUB ANALYTICS
+========================================== */
+
+.github-subtitle{
+
+  max-width:760px;
+
+  margin:24px auto 0;
+
+  color:var(--muted);
+
+  font-size:1.05rem;
+
+}
+
+.github-stats{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+  gap:28px;
+
+  margin-top:70px;
+
+}
+
+.github-card{
+
+  position:relative;
+
+  overflow:hidden;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(12px);
+
+  transition:var(--transition);
+
+}
+
+.github-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(96,165,250,.08),
+      transparent
+    );
+
+  opacity:0;
+
+  transition:var(--transition);
+
+}
+
+.github-card:hover::before{
+  opacity:1;
+}
+
+.github-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:
+    0 18px 50px rgba(0,0,0,.35);
+
+}
+
+.github-card img{
+
+  width:100%;
+
+  display:block;
+
+}
+
+.full-width{
+  grid-column:1/-1;
+}
+
+/* ==========================================
    CONTACT
 ========================================== */
 
@@ -1149,6 +1241,10 @@ body::after{
 
   .contact-box{
     padding:42px 24px;
+  }
+
+  .full-width{
+    grid-column:auto;
   }
 
 }
