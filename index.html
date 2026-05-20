@@ -11,12 +11,12 @@
   />
 
   <title>
-    Frederic Asiani — Data Intelligence Portfolio
+    Frederic Asiani | Data Analyst & Economic Intelligence Expert
   </title>
 
   <meta
     name="description"
-    content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & Web Systems Creator."
+    content="Portfolio premium de Frederic Asiani — Data Analyst, Business Intelligence Specialist, Economic Intelligence Expert & Web Systems Creator."
   />
 
   <!-- SEO -->
@@ -24,7 +24,7 @@
 
   <meta
     property="og:description"
-    content="Data Analyst, Economic Intelligence Specialist & Web Systems Creator."
+    content="Data Analyst • Business Intelligence • Economic Intelligence • Web Systems"
   />
 
   <meta
@@ -35,6 +35,12 @@
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- FAVICON -->
+  <link
+    rel="icon"
+    href="https://avatars.githubusercontent.com/u/135480796?v=4"
+  />
 
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,12 +58,25 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
+  <!-- AOS ANIMATION -->
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 
 </head>
 
 <body>
+
+  <!-- =========================
+       BACKGROUND EFFECT
+  ========================== -->
+
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
 
   <!-- =========================
        HEADER
@@ -67,10 +86,20 @@
 
     <div class="container navbar">
 
+      <!-- LOGO -->
       <a href="#" class="logo">
-        Frederic Asiani
+
+        <span class="logo-icon">
+          <i class="fa-solid fa-chart-simple"></i>
+        </span>
+
+        <span>
+          Frederic Asiani
+        </span>
+
       </a>
 
+      <!-- NAVIGATION -->
       <nav class="nav">
 
         <a href="#about">
@@ -95,6 +124,16 @@
 
       </nav>
 
+      <!-- CTA -->
+      <a
+        href="https://github.com/Frederic-Asiani"
+        target="_blank"
+        class="nav-btn"
+      >
+        <i class="fa-brands fa-github"></i>
+        Portfolio
+      </a>
+
     </div>
 
   </header>
@@ -110,39 +149,57 @@
     <div class="container hero-content">
 
       <!-- LEFT -->
-      <div class="hero-text">
+      <div
+        class="hero-text"
+        data-aos="fade-right"
+      >
 
         <div class="status">
 
           <span class="dot"></span>
 
-          Available for Data & BI Projects
+          Available for International Data & BI Projects
 
         </div>
 
         <h1>
-          Building Data-Driven Systems
-          for Economic & Business
-          Decision-Making
+
+          Building
+          <span class="gradient-text">
+            Intelligent Data Systems
+          </span>
+
+          for Strategic Business
+          & Economic Decisions
+
         </h1>
 
         <p class="hero-description">
 
           Data Analyst, Economic Intelligence Specialist
           and Web Systems Creator focused on analytics,
-          dashboards, business intelligence and modern
-          digital platforms.
+          dashboards, forecasting, business intelligence
+          and scalable digital infrastructures.
 
         </p>
 
+        <!-- BUTTONS -->
         <div class="hero-buttons">
 
           <a href="#projects" class="btn primary">
-            View Projects
+
+            <i class="fa-solid fa-rocket"></i>
+
+            Explore Projects
+
           </a>
 
           <a href="#contact" class="btn secondary">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
             Contact Me
+
           </a>
 
         </div>
@@ -175,7 +232,7 @@
             <h3>Power BI</h3>
 
             <p>
-              Dashboards
+              Executive Dashboards
             </p>
 
           </div>
@@ -185,7 +242,10 @@
       </div>
 
       <!-- RIGHT -->
-      <div class="hero-right">
+      <div
+        class="hero-right"
+        data-aos="fade-left"
+      >
 
         <!-- TERMINAL -->
         <div class="terminal">
@@ -201,23 +261,27 @@
           <div class="terminal-body">
 
             <p>
-              > initializing analytics systems...
+              > initializing intelligence systems...
             </p>
 
             <p>
-              > loading business intelligence stack...
+              > loading analytics architecture...
             </p>
 
             <p>
-              > Python · SQL · Power BI
+              > Python · SQL · Power BI · JS
+            </p>
+
+            <p>
+              > cloud dashboards connected
             </p>
 
             <p>
               > status: production ready
             </p>
 
-            <p>
-              > focus: economic intelligence
+            <p class="terminal-active">
+              > economic intelligence online_
             </p>
 
           </div>
@@ -226,6 +290,8 @@
 
         <!-- AVATAR -->
         <div class="hero-avatar">
+
+          <div class="avatar-ring"></div>
 
           <img
             src="https://avatars.githubusercontent.com/u/135480796?v=4"
@@ -248,21 +314,28 @@
 
     <div class="container">
 
-      <div class="section-heading">
+      <div
+        class="section-heading"
+        data-aos="fade-up"
+      >
 
         <span>
           WHO I AM
         </span>
 
         <h2>
-          Data & Economic Intelligence Specialist
+          Data Intelligence & Business Strategy Expert
         </h2>
 
       </div>
 
       <div class="about-grid">
 
-        <div class="about-card">
+        <!-- CARD -->
+        <div
+          class="about-card"
+          data-aos="zoom-in"
+        >
 
           <i class="fa-solid fa-chart-line"></i>
 
@@ -272,13 +345,18 @@
 
           <p>
             Transforming complex datasets into
-            actionable business insights through
-            analytics and visualization.
+            actionable strategic insights using
+            advanced analytics and data storytelling.
           </p>
 
         </div>
 
-        <div class="about-card">
+        <!-- CARD -->
+        <div
+          class="about-card"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
 
           <i class="fa-solid fa-database"></i>
 
@@ -287,23 +365,30 @@
           </h3>
 
           <p>
-            Building dashboards and decision-support
-            systems using SQL, Power BI and Python.
+            Building executive dashboards and
+            intelligent reporting systems with
+            SQL, Power BI and Python.
           </p>
 
         </div>
 
-        <div class="about-card">
+        <!-- CARD -->
+        <div
+          class="about-card"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
 
           <i class="fa-solid fa-globe"></i>
 
           <h3>
-            Web Systems
+            Digital Systems
           </h3>
 
           <p>
-            Creating modern web platforms with
-            premium interfaces and scalable systems.
+            Designing premium web platforms,
+            scalable infrastructures and
+            modern business solutions.
           </p>
 
         </div>
@@ -322,7 +407,10 @@
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           FEATURED WORK
@@ -337,7 +425,10 @@
       <div class="projects-grid">
 
         <!-- PROJECT -->
-        <article class="project-card">
+        <article
+          class="project-card"
+          data-aos="fade-up"
+        >
 
           <div class="project-image">
 
@@ -359,9 +450,9 @@
             </h3>
 
             <p>
-              Interactive dashboard designed for labor
-              market monitoring and workforce analytics
-              using business intelligence tools.
+              Interactive intelligence dashboard
+              for workforce monitoring, labor
+              indicators and strategic analytics.
             </p>
 
             <div class="project-metrics">
@@ -371,7 +462,7 @@
               </span>
 
               <span>
-                BI Dashboard
+                Real-Time BI
               </span>
 
             </div>
@@ -381,7 +472,11 @@
         </article>
 
         <!-- PROJECT -->
-        <article class="project-card">
+        <article
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
 
           <div class="project-image">
 
@@ -395,7 +490,7 @@
           <div class="project-content">
 
             <span class="project-tag">
-              Economics • Data Science
+              Economics • Forecasting
             </span>
 
             <h3>
@@ -403,18 +498,19 @@
             </h3>
 
             <p>
-              Data-driven platform for economic analysis,
-              forecasting and policy decision support.
+              Data-driven platform dedicated
+              to forecasting, economic analysis
+              and policy decision support.
             </p>
 
             <div class="project-metrics">
 
               <span>
-                Forecast Models
+                AI Forecast Models
               </span>
 
               <span>
-                Statistical Analysis
+                Statistical Insights
               </span>
 
             </div>
@@ -437,7 +533,10 @@
 
     <div class="container">
 
-      <div class="section-heading">
+      <div
+        class="section-heading"
+        data-aos="fade-up"
+      >
 
         <span>
           EXPERIENCE
@@ -451,7 +550,11 @@
 
       <div class="timeline">
 
-        <div class="timeline-item">
+        <!-- ITEM -->
+        <div
+          class="timeline-item"
+          data-aos="fade-right"
+        >
 
           <div class="timeline-dot"></div>
 
@@ -466,16 +569,21 @@
             </span>
 
             <p>
-              Analysis of labor regulations,
+              Monitoring labor regulations,
               workforce indicators and social
-              compliance systems.
+              compliance systems through
+              analytical methodologies.
             </p>
 
           </div>
 
         </div>
 
-        <div class="timeline-item">
+        <!-- ITEM -->
+        <div
+          class="timeline-item"
+          data-aos="fade-left"
+        >
 
           <div class="timeline-dot"></div>
 
@@ -486,13 +594,13 @@
             </h3>
 
             <span>
-              SQL • Python • Business Intelligence
+              SQL • Python • BI Systems
             </span>
 
             <p>
-              Development of analytical dashboards,
-              data pipelines and decision-support
-              systems.
+              Development of intelligent dashboards,
+              automated reporting and advanced
+              decision-support systems.
             </p>
 
           </div>
@@ -513,7 +621,10 @@
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           TECHNOLOGIES
@@ -528,63 +639,33 @@
       <div class="stack-grid">
 
         <div class="stack-card">
-
           <i class="fa-brands fa-python"></i>
-
-          <h3>
-            Python
-          </h3>
-
+          <h3>Python</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-database"></i>
-
-          <h3>
-            SQL
-          </h3>
-
+          <h3>SQL</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-chart-column"></i>
-
-          <h3>
-            Power BI
-          </h3>
-
+          <h3>Power BI</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-js"></i>
-
-          <h3>
-            JavaScript
-          </h3>
-
+          <h3>JavaScript</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-react"></i>
-
-          <h3>
-            React
-          </h3>
-
+          <h3>React</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-github"></i>
-
-          <h3>
-            GitHub
-          </h3>
-
+          <h3>GitHub</h3>
         </div>
 
       </div>
@@ -594,28 +675,31 @@
   </section>
 
   <!-- =========================
-       GITHUB ANALYTICS
+       GITHUB
   ========================== -->
 
   <section id="github" class="section">
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           GITHUB ANALYTICS
         </span>
 
         <h2>
-          Development Activity & Engineering Metrics
+          Engineering Metrics & Development Activity
         </h2>
 
         <p class="github-subtitle">
 
-          Live GitHub statistics showcasing
-          development consistency, technologies
-          and coding activity.
+          Real-time GitHub statistics showcasing
+          coding consistency, technologies and
+          engineering performance.
 
         </p>
 
@@ -623,7 +707,7 @@
 
       <div class="github-stats">
 
-        <!-- MAIN STATS -->
+        <!-- CARD -->
         <div class="github-card">
 
           <img
@@ -633,7 +717,7 @@
 
         </div>
 
-        <!-- STREAK -->
+        <!-- CARD -->
         <div class="github-card">
 
           <img
@@ -643,13 +727,12 @@
 
         </div>
 
-        <!-- LANGUAGES -->
+        <!-- CARD -->
         <div class="github-card full-width">
 
           <img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frederic-Asiani&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&text_color=FFFFFF"
-  alt="Top Languages"
-/>
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frederic-Asiani&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&text_color=FFFFFF"
+            alt="Top Languages"
           />
 
         </div>
@@ -668,20 +751,26 @@
 
     <div class="container">
 
-      <div class="contact-box">
+      <div
+        class="contact-box"
+        data-aos="zoom-in"
+      >
 
         <span>
           CONTACT
         </span>
 
         <h2>
-          Let's Build Something Strategic
+          Let's Build Strategic Digital Solutions
         </h2>
 
         <p>
+
           Available for data analytics,
-          business intelligence and modern
-          web platform projects.
+          business intelligence,
+          dashboard engineering and
+          modern web platform projects.
+
         </p>
 
         <div class="contact-links">
@@ -720,6 +809,47 @@
     </div>
 
   </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <p>
+        © 2026 Frederic Asiani — All Rights Reserved
+      </p>
+
+      <div class="footer-socials">
+
+        <a
+          href="https://github.com/Frederic-Asiani"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 </body>
 
