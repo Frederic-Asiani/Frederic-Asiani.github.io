@@ -16,13 +16,15 @@
 
   <meta
     name="description"
-    content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & Business Intelligence Consultant."
+    content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & BI Consultant."
   />
 
+  <!-- SEO -->
   <meta property="og:title" content="Frederic Asiani Portfolio" />
-  <meta property="og:description" content="Data Intelligence & Business Analytics Solutions" />
+  <meta property="og:description" content="Strategic Data Intelligence & Business Analytics Solutions" />
   <meta property="og:image" content="preview.png" />
 
+  <!-- Fonts -->
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -35,15 +37,23 @@
   />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   />
 
+  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
+  <!-- AOS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+  />
+
+  <!-- CSS -->
   <link
     rel="stylesheet"
     href="styles.css"
@@ -59,9 +69,16 @@
 
   <div id="loader">
 
-    <div class="spinner"></div>
+    <div class="loader-ring"></div>
 
   </div>
+
+  <!-- =========================
+       BACKGROUND EFFECTS
+  ========================== -->
+
+  <div class="blur blur-1"></div>
+  <div class="blur blur-2"></div>
 
   <!-- =========================
        NAVBAR
@@ -72,7 +89,9 @@
     <div class="container nav-container">
 
       <a href="#" class="logo">
-        Frederic Asiani
+
+        <span>Frederic</span>Asiani
+
       </a>
 
       <nav class="nav-links">
@@ -99,11 +118,27 @@
 
       </nav>
 
-      <button id="themeToggle" class="theme-btn">
+      <div class="nav-actions">
 
-        <i class="fa-solid fa-moon"></i>
+        <button
+          id="themeToggle"
+          class="theme-btn"
+        >
 
-      </button>
+          <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+        <a
+          href="#contact"
+          class="nav-cta"
+        >
+
+          Hire Me
+
+        </a>
+
+      </div>
 
     </div>
 
@@ -115,53 +150,81 @@
 
   <section class="hero">
 
-    <div class="gradient"></div>
+    <div class="hero-grid"></div>
 
     <div class="container hero-content">
 
       <!-- LEFT -->
-      <div class="hero-text">
+
+      <div
+        class="hero-text"
+        data-aos="fade-right"
+      >
 
         <div class="status">
 
           <span class="dot"></span>
 
-          Available for International Data & BI Projects
+          Available for International BI & Data Projects
 
         </div>
 
         <h1>
 
-          Data Analyst &
-          Economic Intelligence Specialist
+          Building
+          <span class="gradient-text">
+            Data Intelligence
+          </span>
+          Systems for African Organizations
 
         </h1>
 
         <p class="hero-description">
 
-          Transforming data into strategic decisions
-          for African businesses, institutions and
-          modern organizations through analytics,
-          economic intelligence and scalable digital systems.
+          Data Analyst, Economic Intelligence Specialist
+          and Business Consultant helping organizations
+          transform complex data into strategic decisions,
+          operational visibility and scalable growth.
 
         </p>
 
         <div class="hero-buttons">
 
-          <a href="#projects" class="btn primary">
-            View Case Studies
+          <a
+            href="#projects"
+            class="btn primary"
+          >
+
+            Explore Projects
+
           </a>
 
-          <a href="#contact" class="btn secondary">
-            Let's Work Together
+          <a
+            href="#contact"
+            class="btn secondary"
+          >
+
+            Let's Collaborate
+
           </a>
 
         </div>
 
-        <!-- STATS -->
-        <div class="stats">
+        <!-- METRICS -->
 
-          <div class="stat-card">
+        <div class="hero-metrics">
+
+          <div class="metric-card">
+
+            <h3>20K+</h3>
+
+            <p>
+              Processed Records
+            </p>
+
+          </div>
+
+          <div class="metric-card">
 
             <h3>15+</h3>
 
@@ -171,7 +234,7 @@
 
           </div>
 
-          <div class="stat-card">
+          <div class="metric-card">
 
             <h3>Power BI</h3>
 
@@ -181,61 +244,65 @@
 
           </div>
 
-          <div class="stat-card">
-
-            <h3>Economic</h3>
-
-            <p>
-              Intelligence Systems
-            </p>
-
-          </div>
-
         </div>
 
       </div>
 
       <!-- RIGHT -->
-      <div class="hero-right">
 
-        <!-- TERMINAL -->
-        <div class="terminal">
+      <div
+        class="hero-right"
+        data-aos="fade-left"
+      >
 
-          <div class="terminal-header">
+        <!-- GLASS CARD -->
 
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="glass-card">
 
-          </div>
+          <div class="terminal">
 
-          <div class="terminal-body">
+            <div class="terminal-header">
 
-            <p>
-              > initializing intelligence systems...
-            </p>
+              <span></span>
+              <span></span>
+              <span></span>
 
-            <p>
-              > loading business analytics...
-            </p>
+            </div>
 
-            <p>
-              > Python · SQL · Power BI · Excel
-            </p>
+            <div class="terminal-body">
 
-            <p>
-              > dashboards: operational
-            </p>
+              <p>
+                > initializing analytics systems...
+              </p>
 
-            <p>
-              > status: consulting ready
-            </p>
+              <p>
+                > loading strategic dashboards...
+              </p>
+
+              <p>
+                > Python · SQL · Power BI
+              </p>
+
+              <p>
+                > operational visibility: active
+              </p>
+
+              <p>
+                > business intelligence: connected
+              </p>
+
+              <p class="typing">
+                > consulting ready_
+              </p>
+
+            </div>
 
           </div>
 
         </div>
 
         <!-- AVATAR -->
+
         <div class="hero-avatar">
 
           <img
@@ -257,12 +324,15 @@
 
   <section
     id="about"
-    class="section dark"
+    class="section"
   >
 
-    <div class="container about-premium">
+    <div class="container about-grid-premium">
 
-      <div class="about-image">
+      <div
+        class="about-image"
+        data-aos="zoom-in"
+      >
 
         <img
           src="https://avatars.githubusercontent.com/u/135480796?v=4"
@@ -271,56 +341,62 @@
 
       </div>
 
-      <div class="about-content">
+      <div
+        class="about-content"
+        data-aos="fade-up"
+      >
 
-        <span>
+        <span class="section-badge">
+
           ABOUT ME
+
         </span>
 
         <h2>
 
-          Building Data Intelligence Systems
-          for African Organizations
+          Strategic Analytics &
+          Economic Intelligence
 
         </h2>
 
         <p>
 
-          I specialize in transforming complex datasets
-          into actionable business intelligence solutions
-          for institutions, enterprises and public organizations.
+          I specialize in data analytics, business intelligence,
+          workforce analytics and economic intelligence systems
+          designed to help organizations improve decision-making,
+          visibility and strategic performance.
 
         </p>
 
-        <div class="metrics-grid">
+        <div class="about-highlights">
 
-          <div class="metric">
+          <div class="highlight">
 
-            <h3>20K+</h3>
+            <i class="fa-solid fa-chart-line"></i>
 
-            <p>
-              Analyzed Records
-            </p>
-
-          </div>
-
-          <div class="metric">
-
-            <h3>10+</h3>
-
-            <p>
-              BI Dashboards
-            </p>
+            <span>
+              Business Intelligence
+            </span>
 
           </div>
 
-          <div class="metric">
+          <div class="highlight">
 
-            <h3>5+</h3>
+            <i class="fa-solid fa-database"></i>
 
-            <p>
-              Strategic Systems
-            </p>
+            <span>
+              Data Infrastructure
+            </span>
+
+          </div>
+
+          <div class="highlight">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <span>
+              Economic Intelligence
+            </span>
 
           </div>
 
@@ -338,12 +414,15 @@
 
   <section
     id="services"
-    class="section"
+    class="section dark"
   >
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           SERVICES
@@ -351,40 +430,26 @@
 
         <h2>
 
-          Strategic Data & Business Solutions
+          Premium Data &
+          Business Solutions
 
         </h2>
 
-        <p class="github-subtitle">
+        <p>
 
-          Helping organizations transform raw data
-          into business intelligence, operational efficiency
-          and strategic growth opportunities.
+          Helping businesses, institutions and organizations
+          leverage modern analytics systems and strategic intelligence.
 
         </p>
 
       </div>
 
-      <div class="about-grid">
+      <div class="services-grid">
 
-        <div class="about-card">
-
-          <i class="fa-solid fa-chart-line"></i>
-
-          <h3>
-            Data Analytics
-          </h3>
-
-          <p>
-
-            Advanced data analysis, KPI monitoring,
-            reporting automation and decision-support insights.
-
-          </p>
-
-        </div>
-
-        <div class="about-card">
+        <div
+          class="service-card"
+          data-aos="fade-up"
+        >
 
           <i class="fa-solid fa-chart-pie"></i>
 
@@ -394,14 +459,39 @@
 
           <p>
 
-            Interactive dashboards and executive reporting
-            systems for business performance monitoring.
+            Interactive executive dashboards,
+            KPI monitoring and reporting automation.
 
           </p>
 
         </div>
 
-        <div class="about-card">
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+
+          <i class="fa-solid fa-database"></i>
+
+          <h3>
+            SQL & Data Systems
+          </h3>
+
+          <p>
+
+            Structured databases, optimized queries
+            and scalable analytics infrastructure.
+
+          </p>
+
+        </div>
+
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
 
           <i class="fa-solid fa-globe"></i>
 
@@ -411,59 +501,29 @@
 
           <p>
 
-            Economic analysis, forecasting models and
-            strategic intelligence for institutions and companies.
+            Forecasting systems, economic monitoring
+            and strategic policy analytics.
 
           </p>
 
         </div>
 
-        <div class="about-card">
+        <div
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
 
           <i class="fa-solid fa-code"></i>
 
           <h3>
-            Web Applications
+            Business Web Platforms
           </h3>
 
           <p>
 
-            Modern web platforms and scalable business systems
-            with premium UX/UI experience.
-
-          </p>
-
-        </div>
-
-        <div class="about-card">
-
-          <i class="fa-solid fa-database"></i>
-
-          <h3>
-            Database Intelligence
-          </h3>
-
-          <p>
-
-            Structured SQL databases, automation pipelines
-            and intelligent data architecture systems.
-
-          </p>
-
-        </div>
-
-        <div class="about-card">
-
-          <i class="fa-solid fa-scale-balanced"></i>
-
-          <h3>
-            Labor Compliance
-          </h3>
-
-          <p>
-
-            Workforce regulation monitoring and compliance
-            intelligence solutions for organizations.
+            Modern scalable web systems
+            with premium user experience.
 
           </p>
 
@@ -481,12 +541,15 @@
 
   <section
     id="projects"
-    class="section dark"
+    class="section"
   >
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           CASE STUDIES
@@ -494,8 +557,7 @@
 
         <h2>
 
-          Data Intelligence &
-          Business Analytics Projects
+          Featured Intelligence Projects
 
         </h2>
 
@@ -505,13 +567,16 @@
 
         <!-- PROJECT -->
 
-        <article class="project-card">
+        <article
+          class="project-card"
+          data-aos="zoom-in"
+        >
 
           <div class="project-image">
 
             <img
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
-              alt="Power BI Dashboard"
+              alt="Dashboard"
             />
 
           </div>
@@ -532,19 +597,23 @@
 
             <p>
 
-              Executive dashboard for workforce monitoring,
-              compliance tracking and KPI visualization.
+              Executive reporting dashboard for workforce analytics,
+              compliance tracking and performance visibility.
 
             </p>
 
             <div class="project-buttons">
 
               <a href="#" class="btn primary">
+
                 Live Demo
+
               </a>
 
               <a href="#" class="btn secondary">
+
                 GitHub
+
               </a>
 
             </div>
@@ -555,13 +624,17 @@
 
         <!-- PROJECT -->
 
-        <article class="project-card">
+        <article
+          class="project-card"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
 
           <div class="project-image">
 
             <img
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
-              alt="Economic Intelligence"
+              alt="Analytics"
             />
 
           </div>
@@ -582,19 +655,23 @@
 
             <p>
 
-              Strategic monitoring platform for economic
-              forecasting and policy-oriented analytics.
+              Strategic economic monitoring platform
+              focused on forecasting and analytics.
 
             </p>
 
             <div class="project-buttons">
 
               <a href="#" class="btn primary">
+
                 Live Demo
+
               </a>
 
               <a href="#" class="btn secondary">
+
                 GitHub
+
               </a>
 
             </div>
@@ -610,14 +687,17 @@
   </section>
 
   <!-- =========================
-       TECH STACK
+       STACK
   ========================== -->
 
-  <section class="section">
+  <section class="section dark">
 
     <div class="container">
 
-      <div class="section-heading center">
+      <div
+        class="section-heading center"
+        data-aos="fade-up"
+      >
 
         <span>
           TECHNOLOGIES
@@ -625,7 +705,7 @@
 
         <h2>
 
-          Modern Data & Development Stack
+          Modern Analytics Stack
 
         </h2>
 
@@ -634,63 +714,33 @@
       <div class="stack-grid">
 
         <div class="stack-card">
-
           <i class="fa-brands fa-python"></i>
-
           <h3>Python</h3>
-
-          <p>Analytics & Automation</p>
-
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-database"></i>
-
           <h3>SQL</h3>
-
-          <p>Database Intelligence</p>
-
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-chart-column"></i>
-
           <h3>Power BI</h3>
-
-          <p>Executive Dashboards</p>
-
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-js"></i>
-
           <h3>JavaScript</h3>
-
-          <p>Interactive Interfaces</p>
-
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-github"></i>
-
           <h3>GitHub</h3>
-
-          <p>Version Control</p>
-
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-cloud"></i>
-
           <h3>Cloud</h3>
-
-          <p>Scalable Infrastructure</p>
-
         </div>
 
       </div>
@@ -700,185 +750,37 @@
   </section>
 
   <!-- =========================
-       RESEARCH
-  ========================== -->
-
-  <section
-    id="research"
-    class="section dark"
-  >
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span>
-          RESEARCH & CREDIBILITY
-        </span>
-
-        <h2>
-
-          Academic & Professional Expertise
-
-        </h2>
-
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-
-          <div class="timeline-dot"></div>
-
-          <div class="timeline-content">
-
-            <h3>
-
-              Scientific Publications
-
-            </h3>
-
-            <span>
-
-              Economics • Labor Studies
-
-            </span>
-
-            <p>
-
-              Research work focused on labor systems,
-              economic policy and workforce analysis.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <div class="timeline-dot"></div>
-
-          <div class="timeline-content">
-
-            <h3>
-
-              Labor Inspection & Compliance
-
-            </h3>
-
-            <span>
-
-              Workforce Regulation
-
-            </span>
-
-            <p>
-
-              Professional expertise in labor compliance,
-              workforce analytics and social systems.
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       TESTIMONIALS
-  ========================== -->
-
-  <section class="section">
-
-    <div class="container">
-
-      <div class="section-heading center">
-
-        <span>
-          TESTIMONIALS
-        </span>
-
-        <h2>
-
-          Professional Feedback
-
-        </h2>
-
-      </div>
-
-      <div class="testimonials-grid">
-
-        <div class="testimonial-card">
-
-          <p>
-
-            “Professional analytics solutions with
-            excellent dashboard visualization.”
-
-          </p>
-
-          <h4>
-            Business Client
-          </h4>
-
-        </div>
-
-        <div class="testimonial-card">
-
-          <p>
-
-            “Strategic data insights that improved
-            operational visibility and reporting.”
-
-          </p>
-
-          <h4>
-            Consulting Partner
-          </h4>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       CONTACT
+       CTA
   ========================== -->
 
   <section
     id="contact"
-    class="section dark"
+    class="section cta-section"
   >
 
-    <div class="container">
+    <div
+      class="container"
+      data-aos="zoom-in"
+    >
 
-      <div class="contact-box">
+      <div class="cta-box">
 
         <span>
-          LET'S WORK TOGETHER
+          LET'S BUILD TOGETHER
         </span>
 
         <h2>
 
-          Turning African Data
-          Into Strategic Intelligence
+          Turning Complex Data
+          Into Strategic Business Intelligence
 
         </h2>
 
         <p>
 
-          I help organizations transform complex data
-          into strategic insights, executive dashboards
-          and scalable digital solutions.
+          Available for analytics projects,
+          dashboard systems, consulting missions
+          and business intelligence solutions.
 
         </p>
 
@@ -894,46 +796,12 @@
           </a>
 
           <a
-            href="https://wa.me/243000000000"
-            class="btn secondary"
-            target="_blank"
-          >
-
-            WhatsApp
-
-          </a>
-
-        </div>
-
-        <div class="contact-links">
-
-          <a href="mailto:freddyasiani1@gmail.com">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            freddyasiani1@gmail.com
-
-          </a>
-
-          <a
             href="https://github.com/Frederic-Asiani"
             target="_blank"
+            class="btn secondary"
           >
-
-            <i class="fa-brands fa-github"></i>
 
             GitHub Portfolio
-
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-          >
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            LinkedIn Profile
 
           </a>
 
@@ -956,29 +824,31 @@
       <div>
 
         <h3>
+
           Frederic Asiani
+
         </h3>
 
         <p>
 
-          Data Analyst • Economic Intelligence Specialist
+          Data Analyst • BI Consultant • Economic Intelligence
 
         </p>
 
       </div>
 
-      <div class="footer-links">
+      <div class="footer-socials">
 
         <a href="#">
-          GitHub
+          <i class="fa-brands fa-linkedin"></i>
         </a>
 
-        <a href="#">
-          LinkedIn
+        <a href="https://github.com/Frederic-Asiani">
+          <i class="fa-brands fa-github"></i>
         </a>
 
-        <a href="#">
-          Email
+        <a href="mailto:freddyasiani1@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
         </a>
 
       </div>
@@ -991,18 +861,30 @@
        JAVASCRIPT
   ========================== -->
 
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <script>
+
+    // AOS
+
+    AOS.init({
+
+      duration: 1000,
+      once: true
+
+    });
 
     // Loader
 
     window.addEventListener("load", () => {
 
-      document.getElementById("loader")
+      document
+        .getElementById("loader")
         .classList.add("hidden");
 
     });
 
-    // Dark Mode
+    // Theme
 
     const themeToggle =
       document.getElementById("themeToggle");
