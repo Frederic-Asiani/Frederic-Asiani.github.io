@@ -1,80 +1,247 @@
-<!-- =========================
-     HERO
-========================== -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="hero">
+<head>
 
-  <div class="gradient"></div>
+  <meta charset="UTF-8" />
 
-  <div class="container hero-content">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <!-- LEFT -->
-    <div class="hero-text">
+  <title>
+    Frederic Asiani — Data Intelligence Portfolio
+  </title>
 
-      <div class="status">
+  <meta
+    name="description"
+    content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & Business Intelligence Consultant."
+  />
 
-        <span class="dot"></span>
+  <meta property="og:title" content="Frederic Asiani Portfolio" />
+  <meta property="og:description" content="Data Intelligence & Business Analytics Solutions" />
+  <meta property="og:image" content="preview.png" />
 
-        Available for International Data & BI Projects
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
 
-      </div>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
 
-      <h1>
-        Data Analyst & Economic
-        Intelligence Specialist
-      </h1>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-      <p class="hero-description">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 
-        Transforming data into strategic decisions
-        for African businesses, institutions and
-        modern organizations through analytics,
-        economic intelligence and scalable digital systems.
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
 
-      </p>
+</head>
 
-      <div class="hero-buttons">
+<body>
 
-        <a href="#projects" class="btn primary">
-          View Case Studies
+  <!-- =========================
+       LOADER
+  ========================== -->
+
+  <div id="loader">
+
+    <div class="spinner"></div>
+
+  </div>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        Frederic Asiani
+      </a>
+
+      <nav class="nav-links">
+
+        <a href="#about">
+          About
         </a>
 
-        <a href="#contact" class="btn secondary">
-          Let's Work Together
+        <a href="#services">
+          Services
         </a>
 
-      </div>
+        <a href="#projects">
+          Projects
+        </a>
 
-      <!-- STATS -->
-      <div class="stats">
+        <a href="#research">
+          Research
+        </a>
 
-        <div class="stat-card">
+        <a href="#contact">
+          Contact
+        </a>
 
-          <h3>15+</h3>
+      </nav>
 
-          <p>
-            Analytics Projects
-          </p>
+      <button id="themeToggle" class="theme-btn">
+
+        <i class="fa-solid fa-moon"></i>
+
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="gradient"></div>
+
+    <div class="container hero-content">
+
+      <!-- LEFT -->
+      <div class="hero-text">
+
+        <div class="status">
+
+          <span class="dot"></span>
+
+          Available for International Data & BI Projects
 
         </div>
 
-        <div class="stat-card">
+        <h1>
 
-          <h3>Power BI</h3>
+          Data Analyst &
+          Economic Intelligence Specialist
 
-          <p>
-            Executive Dashboards
-          </p>
+        </h1>
+
+        <p class="hero-description">
+
+          Transforming data into strategic decisions
+          for African businesses, institutions and
+          modern organizations through analytics,
+          economic intelligence and scalable digital systems.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn primary">
+            View Case Studies
+          </a>
+
+          <a href="#contact" class="btn secondary">
+            Let's Work Together
+          </a>
 
         </div>
 
-        <div class="stat-card">
+        <!-- STATS -->
+        <div class="stats">
 
-          <h3>Economic</h3>
+          <div class="stat-card">
 
-          <p>
-            Intelligence Systems
-          </p>
+            <h3>15+</h3>
+
+            <p>
+              Analytics Projects
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>Power BI</h3>
+
+            <p>
+              Executive Dashboards
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>Economic</h3>
+
+            <p>
+              Intelligence Systems
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right">
+
+        <!-- TERMINAL -->
+        <div class="terminal">
+
+          <div class="terminal-header">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+
+          <div class="terminal-body">
+
+            <p>
+              > initializing intelligence systems...
+            </p>
+
+            <p>
+              > loading business analytics...
+            </p>
+
+            <p>
+              > Python · SQL · Power BI · Excel
+            </p>
+
+            <p>
+              > dashboards: operational
+            </p>
+
+            <p>
+              > status: consulting ready
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- AVATAR -->
+        <div class="hero-avatar">
+
+          <img
+            src="https://avatars.githubusercontent.com/u/135480796?v=4"
+            alt="Frederic Asiani"
+          />
 
         </div>
 
@@ -82,52 +249,20 @@
 
     </div>
 
-    <!-- RIGHT -->
-    <div class="hero-right">
+  </section>
 
-      <!-- TERMINAL -->
-      <div class="terminal">
+  <!-- =========================
+       ABOUT
+  ========================== -->
 
-        <div class="terminal-header">
+  <section
+    id="about"
+    class="section dark"
+  >
 
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class="container about-premium">
 
-        </div>
-
-        <div class="terminal-body">
-
-          <p>
-            > initializing data intelligence systems...
-          </p>
-
-          <p>
-            > loading economic analytics models...
-          </p>
-
-          <p>
-            > Python · SQL · Power BI · Excel
-          </p>
-
-          <p>
-            > dashboards: operational
-          </p>
-
-          <p>
-            > focus: African business growth
-          </p>
-
-          <p>
-            > status: consulting ready
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- AVATAR -->
-      <div class="hero-avatar">
+      <div class="about-image">
 
         <img
           src="https://avatars.githubusercontent.com/u/135480796?v=4"
@@ -136,597 +271,763 @@
 
       </div>
 
-    </div>
+      <div class="about-content">
 
-  </div>
+        <span>
+          ABOUT ME
+        </span>
 
-</section>
+        <h2>
 
-<!-- =========================
-     SERVICES
-========================== -->
+          Building Data Intelligence Systems
+          for African Organizations
 
-<section class="section">
-
-  <div class="container">
-
-    <div class="section-heading center">
-
-      <span>
-        SERVICES
-      </span>
-
-      <h2>
-        Strategic Data & Business Solutions
-      </h2>
-
-      <p class="github-subtitle">
-
-        Helping organizations transform raw data
-        into business intelligence, operational efficiency
-        and strategic growth opportunities.
-
-      </p>
-
-    </div>
-
-    <div class="about-grid">
-
-      <div class="about-card">
-
-        <i class="fa-solid fa-chart-line"></i>
-
-        <h3>
-          Data Analytics
-        </h3>
+        </h2>
 
         <p>
-          Advanced data analysis, KPI monitoring,
-          reporting automation and decision-support insights.
+
+          I specialize in transforming complex datasets
+          into actionable business intelligence solutions
+          for institutions, enterprises and public organizations.
+
         </p>
 
-      </div>
+        <div class="metrics-grid">
 
-      <div class="about-card">
+          <div class="metric">
 
-        <i class="fa-solid fa-chart-pie"></i>
+            <h3>20K+</h3>
 
-        <h3>
-          Power BI Dashboards
-        </h3>
+            <p>
+              Analyzed Records
+            </p>
 
-        <p>
-          Interactive dashboards and executive reporting
-          systems for business performance monitoring.
-        </p>
+          </div>
 
-      </div>
+          <div class="metric">
 
-      <div class="about-card">
+            <h3>10+</h3>
 
-        <i class="fa-solid fa-globe"></i>
+            <p>
+              BI Dashboards
+            </p>
 
-        <h3>
-          Economic Intelligence
-        </h3>
+          </div>
 
-        <p>
-          Economic analysis, forecasting models and
-          strategic intelligence for institutions and companies.
-        </p>
+          <div class="metric">
 
-      </div>
+            <h3>5+</h3>
 
-      <div class="about-card">
-
-        <i class="fa-solid fa-briefcase"></i>
-
-        <h3>
-          Business Consulting
-        </h3>
-
-        <p>
-          Data-driven consulting solutions to improve
-          operations, productivity and business strategy.
-        </p>
-
-      </div>
-
-      <div class="about-card">
-
-        <i class="fa-solid fa-code"></i>
-
-        <h3>
-          Web Applications
-        </h3>
-
-        <p>
-          Modern web platforms and business systems
-          designed for scalability and premium UX/UI.
-        </p>
-
-      </div>
-
-      <div class="about-card">
-
-        <i class="fa-solid fa-scale-balanced"></i>
-
-        <h3>
-          Labor Compliance Solutions
-        </h3>
-
-        <p>
-          Workforce analytics, labor regulation monitoring
-          and compliance intelligence systems.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     PREMIUM PROJECTS
-========================== -->
-
-<section id="projects" class="section dark">
-
-  <div class="container">
-
-    <div class="section-heading center">
-
-      <span>
-        CASE STUDIES
-      </span>
-
-      <h2>
-        Data Intelligence & Business Analytics Projects
-      </h2>
-
-      <p class="github-subtitle">
-
-        Real-world analytics systems, dashboards
-        and strategic intelligence platforms.
-
-      </p>
-
-    </div>
-
-    <div class="projects-grid">
-
-      <!-- PROJECT -->
-      <article class="project-card">
-
-        <div class="project-image">
-
-          <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
-            alt="Power BI Dashboard"
-          />
-
-        </div>
-
-        <div class="project-content">
-
-          <span class="project-tag">
-            Power BI • SQL • HR Analytics
-          </span>
-
-          <h3>
-            Workforce Intelligence Dashboard
-          </h3>
-
-          <p>
-            Executive dashboard for labor market monitoring,
-            workforce KPIs, compliance tracking and
-            HR analytics visualization.
-          </p>
-
-          <div class="project-metrics">
-
-            <span>
-              20K+ Records
-            </span>
-
-            <span>
-              Real-Time KPIs
-            </span>
+            <p>
+              Strategic Systems
+            </p>
 
           </div>
 
         </div>
 
-      </article>
+      </div>
 
-      <!-- PROJECT -->
-      <article class="project-card">
+    </div>
 
-        <div class="project-image">
+  </section>
 
-          <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
-            alt="Economic Analytics"
-          />
+  <!-- =========================
+       SERVICES
+  ========================== -->
 
-        </div>
+  <section
+    id="services"
+    class="section"
+  >
 
-        <div class="project-content">
+    <div class="container">
 
-          <span class="project-tag">
-            Economic Intelligence • Forecasting
-          </span>
+      <div class="section-heading center">
+
+        <span>
+          SERVICES
+        </span>
+
+        <h2>
+
+          Strategic Data & Business Solutions
+
+        </h2>
+
+        <p class="github-subtitle">
+
+          Helping organizations transform raw data
+          into business intelligence, operational efficiency
+          and strategic growth opportunities.
+
+        </p>
+
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-card">
+
+          <i class="fa-solid fa-chart-line"></i>
 
           <h3>
-            RDC Economic Intelligence Platform
+            Data Analytics
           </h3>
 
           <p>
-            Strategic platform for economic monitoring,
-            forecasting models and policy-oriented analytics
-            focused on African economic growth.
+
+            Advanced data analysis, KPI monitoring,
+            reporting automation and decision-support insights.
+
           </p>
 
-          <div class="project-metrics">
+        </div>
 
-            <span>
-              Predictive Models
-            </span>
+        <div class="about-card">
 
-            <span>
-              Economic Insights
-            </span>
+          <i class="fa-solid fa-chart-pie"></i>
+
+          <h3>
+            Power BI Dashboards
+          </h3>
+
+          <p>
+
+            Interactive dashboards and executive reporting
+            systems for business performance monitoring.
+
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <i class="fa-solid fa-globe"></i>
+
+          <h3>
+            Economic Intelligence
+          </h3>
+
+          <p>
+
+            Economic analysis, forecasting models and
+            strategic intelligence for institutions and companies.
+
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <i class="fa-solid fa-code"></i>
+
+          <h3>
+            Web Applications
+          </h3>
+
+          <p>
+
+            Modern web platforms and scalable business systems
+            with premium UX/UI experience.
+
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <i class="fa-solid fa-database"></i>
+
+          <h3>
+            Database Intelligence
+          </h3>
+
+          <p>
+
+            Structured SQL databases, automation pipelines
+            and intelligent data architecture systems.
+
+          </p>
+
+        </div>
+
+        <div class="about-card">
+
+          <i class="fa-solid fa-scale-balanced"></i>
+
+          <h3>
+            Labor Compliance
+          </h3>
+
+          <p>
+
+            Workforce regulation monitoring and compliance
+            intelligence solutions for organizations.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
+
+  <section
+    id="projects"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="section-heading center">
+
+        <span>
+          CASE STUDIES
+        </span>
+
+        <h2>
+
+          Data Intelligence &
+          Business Analytics Projects
+
+        </h2>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+              alt="Power BI Dashboard"
+            />
 
           </div>
 
-        </div>
+          <div class="project-content">
 
-      </article>
+            <span class="project-tag">
 
-      <!-- PROJECT -->
-      <article class="project-card">
+              Power BI • SQL • HR Analytics
 
-        <div class="project-image">
-
-          <img
-            src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=1400&auto=format&fit=crop"
-            alt="Finance Dashboard"
-          />
-
-        </div>
-
-        <div class="project-content">
-
-          <span class="project-tag">
-            Finance • Python • SQL
-          </span>
-
-          <h3>
-            Financial Performance Analytics
-          </h3>
-
-          <p>
-            Business intelligence solution designed
-            to track profitability, operational costs,
-            financial KPIs and growth opportunities.
-          </p>
-
-          <div class="project-metrics">
-
-            <span>
-              Financial KPIs
             </span>
 
-            <span>
-              BI Reporting
-            </span>
+            <h3>
+
+              Workforce Intelligence Dashboard
+
+            </h3>
+
+            <p>
+
+              Executive dashboard for workforce monitoring,
+              compliance tracking and KPI visualization.
+
+            </p>
+
+            <div class="project-buttons">
+
+              <a href="#" class="btn primary">
+                Live Demo
+              </a>
+
+              <a href="#" class="btn secondary">
+                GitHub
+              </a>
+
+            </div>
 
           </div>
 
-        </div>
+        </article>
 
-      </article>
+        <!-- PROJECT -->
 
-    </div>
+        <article class="project-card">
 
-  </div>
+          <div class="project-image">
 
-</section>
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+              alt="Economic Intelligence"
+            />
 
-<!-- =========================
-     TECHNOLOGIES
-========================== -->
+          </div>
 
-<section class="section">
+          <div class="project-content">
 
-  <div class="container">
+            <span class="project-tag">
 
-    <div class="section-heading center">
+              Economic Intelligence • Forecasting
 
-      <span>
-        TECHNOLOGIES
-      </span>
+            </span>
 
-      <h2>
-        Modern Data & Development Stack
-      </h2>
+            <h3>
 
-    </div>
+              RDC Economic Intelligence Platform
 
-    <div class="stack-grid">
+            </h3>
 
-      <div class="stack-card">
+            <p>
 
-        <i class="fa-brands fa-python"></i>
+              Strategic monitoring platform for economic
+              forecasting and policy-oriented analytics.
 
-        <h3>
-          Python
-        </h3>
+            </p>
 
-        <p>
-          Data Analysis & Automation
-        </p>
+            <div class="project-buttons">
 
-      </div>
+              <a href="#" class="btn primary">
+                Live Demo
+              </a>
 
-      <div class="stack-card">
+              <a href="#" class="btn secondary">
+                GitHub
+              </a>
 
-        <i class="fa-solid fa-database"></i>
+            </div>
 
-        <h3>
-          SQL
-        </h3>
+          </div>
 
-        <p>
-          Database Intelligence
-        </p>
-
-      </div>
-
-      <div class="stack-card">
-
-        <i class="fa-solid fa-chart-column"></i>
-
-        <h3>
-          Power BI
-        </h3>
-
-        <p>
-          Executive Dashboards
-        </p>
-
-      </div>
-
-      <div class="stack-card">
-
-        <i class="fa-solid fa-table"></i>
-
-        <h3>
-          Excel
-        </h3>
-
-        <p>
-          Business Reporting
-        </p>
-
-      </div>
-
-      <div class="stack-card">
-
-        <i class="fa-brands fa-js"></i>
-
-        <h3>
-          JavaScript
-        </h3>
-
-        <p>
-          Interactive Interfaces
-        </p>
-
-      </div>
-
-      <div class="stack-card">
-
-        <i class="fa-brands fa-github"></i>
-
-        <h3>
-          GitHub
-        </h3>
-
-        <p>
-          Version Control
-        </p>
+        </article>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- =========================
+       TECH STACK
+  ========================== -->
 
-<!-- =========================
-     ACADEMIC & RESEARCH
-========================== -->
+  <section class="section">
 
-<section class="section dark">
+    <div class="container">
 
-  <div class="container">
+      <div class="section-heading center">
 
-    <div class="section-heading">
+        <span>
+          TECHNOLOGIES
+        </span>
 
-      <span>
-        RESEARCH & CREDIBILITY
-      </span>
+        <h2>
 
-      <h2>
-        Academic & Professional Expertise
-      </h2>
+          Modern Data & Development Stack
 
-    </div>
+        </h2>
 
-    <div class="timeline">
+      </div>
 
-      <div class="timeline-item">
+      <div class="stack-grid">
 
-        <div class="timeline-dot"></div>
+        <div class="stack-card">
 
-        <div class="timeline-content">
+          <i class="fa-brands fa-python"></i>
 
-          <h3>
-            Scientific Research & Publications
-          </h3>
+          <h3>Python</h3>
 
-          <span>
-            Economics • Labor Studies • Social Analysis
-          </span>
-
-          <p>
-            Research work focused on labor systems,
-            economic policy, social conflicts and
-            strategic workforce analysis.
-          </p>
+          <p>Analytics & Automation</p>
 
         </div>
 
-      </div>
+        <div class="stack-card">
 
-      <div class="timeline-item">
+          <i class="fa-solid fa-database"></i>
 
-        <div class="timeline-dot"></div>
+          <h3>SQL</h3>
 
-        <div class="timeline-content">
-
-          <h3>
-            Labor Inspection & Compliance
-          </h3>
-
-          <span>
-            Workforce Regulation • Analytics
-          </span>
-
-          <p>
-            Professional experience in labor compliance,
-            workforce intelligence and social regulation systems.
-          </p>
+          <p>Database Intelligence</p>
 
         </div>
 
-      </div>
+        <div class="stack-card">
 
-      <div class="timeline-item">
+          <i class="fa-solid fa-chart-column"></i>
 
-        <div class="timeline-dot"></div>
+          <h3>Power BI</h3>
 
-        <div class="timeline-content">
-
-          <h3>
-            Data Science & BI Projects
-          </h3>
-
-          <span>
-            Python • SQL • Dashboarding
-          </span>
-
-          <p>
-            Development of analytical systems,
-            business dashboards and economic intelligence tools.
-          </p>
+          <p>Executive Dashboards</p>
 
         </div>
 
-      </div>
+        <div class="stack-card">
 
-    </div>
+          <i class="fa-brands fa-js"></i>
 
-  </div>
+          <h3>JavaScript</h3>
 
-</section>
+          <p>Interactive Interfaces</p>
 
-<!-- =========================
-     BUSINESS CTA
-========================== -->
+        </div>
 
-<section id="contact" class="section">
-
-  <div class="container">
-
-    <div class="contact-box">
-
-      <span>
-        LET'S WORK TOGETHER
-      </span>
-
-      <h2>
-        Need a Data-Driven Solution
-        for Your Business?
-      </h2>
-
-      <p>
-
-        I help organizations transform complex data
-        into strategic insights, executive dashboards
-        and scalable digital solutions for business growth.
-
-      </p>
-
-      <div class="hero-buttons">
-
-        <a
-          href="mailto:freddyasiani1@gmail.com"
-          class="btn primary"
-        >
-          Hire Me
-        </a>
-
-        <a
-          href="https://wa.me/"
-          class="btn secondary"
-          target="_blank"
-        >
-          WhatsApp
-        </a>
-
-      </div>
-
-      <div class="contact-links">
-
-        <a href="mailto:freddyasiani1@gmail.com">
-
-          <i class="fa-solid fa-envelope"></i>
-
-          freddyasiani1@gmail.com
-
-        </a>
-
-        <a
-          href="https://github.com/Frederic-Asiani"
-          target="_blank"
-        >
+        <div class="stack-card">
 
           <i class="fa-brands fa-github"></i>
 
-          GitHub Portfolio
+          <h3>GitHub</h3>
 
+          <p>Version Control</p>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-solid fa-cloud"></i>
+
+          <h3>Cloud</h3>
+
+          <p>Scalable Infrastructure</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       RESEARCH
+  ========================== -->
+
+  <section
+    id="research"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>
+          RESEARCH & CREDIBILITY
+        </span>
+
+        <h2>
+
+          Academic & Professional Expertise
+
+        </h2>
+
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+
+              Scientific Publications
+
+            </h3>
+
+            <span>
+
+              Economics • Labor Studies
+
+            </span>
+
+            <p>
+
+              Research work focused on labor systems,
+              economic policy and workforce analysis.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+
+              Labor Inspection & Compliance
+
+            </h3>
+
+            <span>
+
+              Workforce Regulation
+
+            </span>
+
+            <p>
+
+              Professional expertise in labor compliance,
+              workforce analytics and social systems.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       TESTIMONIALS
+  ========================== -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading center">
+
+        <span>
+          TESTIMONIALS
+        </span>
+
+        <h2>
+
+          Professional Feedback
+
+        </h2>
+
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+
+          <p>
+
+            “Professional analytics solutions with
+            excellent dashboard visualization.”
+
+          </p>
+
+          <h4>
+            Business Client
+          </h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+          <p>
+
+            “Strategic data insights that improved
+            operational visibility and reporting.”
+
+          </p>
+
+          <h4>
+            Consulting Partner
+          </h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section
+    id="contact"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <span>
+          LET'S WORK TOGETHER
+        </span>
+
+        <h2>
+
+          Turning African Data
+          Into Strategic Intelligence
+
+        </h2>
+
+        <p>
+
+          I help organizations transform complex data
+          into strategic insights, executive dashboards
+          and scalable digital solutions.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="mailto:freddyasiani1@gmail.com"
+            class="btn primary"
+          >
+
+            Hire Me
+
+          </a>
+
+          <a
+            href="https://wa.me/243000000000"
+            class="btn secondary"
+            target="_blank"
+          >
+
+            WhatsApp
+
+          </a>
+
+        </div>
+
+        <div class="contact-links">
+
+          <a href="mailto:freddyasiani1@gmail.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            freddyasiani1@gmail.com
+
+          </a>
+
+          <a
+            href="https://github.com/Frederic-Asiani"
+            target="_blank"
+          >
+
+            <i class="fa-brands fa-github"></i>
+
+            GitHub Portfolio
+
+          </a>
+
+          <a
+            href="#"
+            target="_blank"
+          >
+
+            <i class="fa-brands fa-linkedin"></i>
+
+            LinkedIn Profile
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <div>
+
+        <h3>
+          Frederic Asiani
+        </h3>
+
+        <p>
+
+          Data Analyst • Economic Intelligence Specialist
+
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#">
+          GitHub
         </a>
 
-        <a
-          href="#"
-          target="_blank"
-        >
+        <a href="#">
+          LinkedIn
+        </a>
 
-          <i class="fa-brands fa-linkedin"></i>
-
-          LinkedIn Profile
-
+        <a href="#">
+          Email
         </a>
 
       </div>
 
     </div>
 
-  </div>
+  </footer>
 
-</section>
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    // Loader
+
+    window.addEventListener("load", () => {
+
+      document.getElementById("loader")
+        .classList.add("hidden");
+
+    });
+
+    // Dark Mode
+
+    const themeToggle =
+      document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", () => {
+
+      document.body.classList.toggle("light-mode");
+
+      localStorage.setItem(
+        "theme",
+        document.body.classList.contains("light-mode")
+      );
+
+    });
+
+    // Load Theme
+
+    if (localStorage.getItem("theme") === "true") {
+
+      document.body.classList.add("light-mode");
+
+    }
+
+  </script>
+
+</body>
+
+</html>
