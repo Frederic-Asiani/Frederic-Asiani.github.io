@@ -3,6 +3,10 @@
 
 <head>
 
+  <!-- =========================
+       META
+  ========================== -->
+
   <meta charset="UTF-8" />
 
   <meta
@@ -19,12 +23,22 @@
     content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & BI Consultant."
   />
 
-  <!-- SEO -->
   <meta property="og:title" content="Frederic Asiani Portfolio" />
-  <meta property="og:description" content="Strategic Data Intelligence & Business Analytics Solutions" />
-  <meta property="og:image" content="preview.png" />
 
-  <!-- Fonts -->
+  <meta
+    property="og:description"
+    content="Strategic Data Intelligence & Business Analytics Solutions"
+  />
+
+  <meta
+    property="og:image"
+    content="preview.png"
+  />
+
+  <!-- =========================
+       GOOGLE FONTS
+  ========================== -->
+
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -41,19 +55,28 @@
     rel="stylesheet"
   />
 
-  <!-- Icons -->
+  <!-- =========================
+       FONT AWESOME
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
-  <!-- AOS -->
+  <!-- =========================
+       AOS ANIMATION
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://unpkg.com/aos@2.3.4/dist/aos.css"
   />
 
-  <!-- CSS -->
+  <!-- =========================
+       CSS
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="styles.css"
@@ -81,64 +104,168 @@
   <div class="blur blur-2"></div>
 
   <!-- =========================
-       NAVBAR
+       PREMIUM HEADER
   ========================== -->
 
-  <header class="navbar">
+  <header class="navbar" id="navbar">
+
+    <div class="navbar-gradient"></div>
 
     <div class="container nav-container">
 
+      <!-- LOGO -->
+
       <a href="#" class="logo">
 
-        <span>Frederic</span>Asiani
+        <div class="logo-icon">
+
+          <span>F</span>
+
+        </div>
+
+        <div class="logo-content">
+
+          <h2>
+            Frederic Asiani
+          </h2>
+
+          <span>
+            Data Intelligence Specialist
+          </span>
+
+        </div>
 
       </a>
+
+      <!-- NAVIGATION -->
 
       <nav class="nav-links">
 
         <a href="#about">
+
+          <span>01.</span>
           About
+
         </a>
 
         <a href="#services">
+
+          <span>02.</span>
           Services
+
         </a>
 
         <a href="#projects">
+
+          <span>03.</span>
           Projects
+
         </a>
 
         <a href="#research">
+
+          <span>04.</span>
           Research
+
         </a>
 
         <a href="#contact">
+
+          <span>05.</span>
           Contact
+
         </a>
 
       </nav>
 
+      <!-- ACTIONS -->
+
       <div class="nav-actions">
 
+        <!-- SEARCH -->
+
+        <button class="icon-btn">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+        <!-- THEME -->
+
         <button
+          class="icon-btn"
           id="themeToggle"
-          class="theme-btn"
         >
 
           <i class="fa-solid fa-moon"></i>
 
         </button>
 
+        <!-- CTA -->
+
         <a
           href="#contact"
           class="nav-cta"
         >
 
-          Hire Me
+          <span>
+            Hire Me
+          </span>
+
+          <i class="fa-solid fa-arrow-right"></i>
 
         </a>
 
+        <!-- MOBILE BUTTON -->
+
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+        >
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
       </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+    >
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#research">
+        Research
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="mailto:freddyasiani1@gmail.com"
+        class="mobile-cta"
+      >
+
+        Work With Me
+
+      </a>
 
     </div>
 
@@ -173,7 +300,9 @@
 
           Building
           <span class="gradient-text">
+
             Data Intelligence
+
           </span>
           Systems for African Organizations
 
@@ -687,69 +816,6 @@
   </section>
 
   <!-- =========================
-       STACK
-  ========================== -->
-
-  <section class="section dark">
-
-    <div class="container">
-
-      <div
-        class="section-heading center"
-        data-aos="fade-up"
-      >
-
-        <span>
-          TECHNOLOGIES
-        </span>
-
-        <h2>
-
-          Modern Analytics Stack
-
-        </h2>
-
-      </div>
-
-      <div class="stack-grid">
-
-        <div class="stack-card">
-          <i class="fa-brands fa-python"></i>
-          <h3>Python</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-solid fa-database"></i>
-          <h3>SQL</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-solid fa-chart-column"></i>
-          <h3>Power BI</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-brands fa-js"></i>
-          <h3>JavaScript</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-brands fa-github"></i>
-          <h3>GitHub</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-solid fa-cloud"></i>
-          <h3>Cloud</h3>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
        CTA
   ========================== -->
 
@@ -858,10 +924,14 @@
   </footer>
 
   <!-- =========================
-       JAVASCRIPT
+       AOS
   ========================== -->
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
   <script>
 
@@ -884,7 +954,42 @@
 
     });
 
-    // Theme
+    // Mobile Menu
+
+    const mobileBtn =
+      document.getElementById("mobileMenuBtn");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+    mobileBtn.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("active");
+
+    });
+
+    // Navbar Scroll
+
+    const navbar =
+      document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+      if(window.scrollY > 50){
+
+        navbar.classList.add("scrolled");
+
+      }
+
+      else{
+
+        navbar.classList.remove("scrolled");
+
+      }
+
+    });
+
+    // Theme Toggle
 
     const themeToggle =
       document.getElementById("themeToggle");
@@ -893,20 +998,21 @@
 
       document.body.classList.toggle("light-mode");
 
-      localStorage.setItem(
-        "theme",
-        document.body.classList.contains("light-mode")
-      );
-
     });
 
-    // Load Theme
+    // Close Mobile Menu
 
-    if (localStorage.getItem("theme") === "true") {
+    document
+      .querySelectorAll(".mobile-menu a")
+      .forEach(link => {
 
-      document.body.classList.add("light-mode");
+        link.addEventListener("click", () => {
 
-    }
+          mobileMenu.classList.remove("active");
+
+        });
+
+      });
 
   </script>
 
