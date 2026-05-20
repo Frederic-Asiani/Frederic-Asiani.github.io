@@ -1463,3 +1463,192 @@ body::after{
   }
 
 }
+
+/* ==========================================
+   PREMIUM LOGO DESIGN
+========================================== */
+
+.logo{
+
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  text-decoration:none;
+
+}
+
+/* ICON */
+
+.logo-icon{
+
+  position:relative;
+
+  width:62px;
+  height:62px;
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #60a5fa
+    );
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
+
+  box-shadow:
+    0 10px 30px rgba(59,130,246,.35);
+
+  transition:var(--transition);
+
+}
+
+.logo:hover .logo-icon{
+
+  transform:
+    translateY(-4px)
+    rotate(-3deg);
+
+  box-shadow:
+    0 18px 40px rgba(59,130,246,.45);
+
+}
+
+/* GLASS EFFECT */
+
+.logo-icon::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:1px;
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.16),
+      rgba(255,255,255,.02)
+    );
+
+}
+
+/* LETTERS */
+
+.f-letter,
+.a-letter{
+
+  position:absolute;
+
+  font-size:1.8rem;
+
+  font-weight:900;
+
+  color:white;
+
+  z-index:2;
+
+  line-height:1;
+
+}
+
+.f-letter{
+
+  left:14px;
+  top:11px;
+
+  opacity:.92;
+
+}
+
+.a-letter{
+
+  right:13px;
+  bottom:10px;
+
+  color:#dbeafe;
+
+}
+
+/* TEXT */
+
+.logo-text{
+
+  display:flex;
+  flex-direction:column;
+
+}
+
+.logo-text h2{
+
+  font-size:1.1rem;
+
+  font-weight:800;
+
+  color:white;
+
+  line-height:1.1;
+
+  letter-spacing:.3px;
+
+}
+
+.logo-text span{
+
+  margin-top:4px;
+
+  font-size:.68rem;
+
+  letter-spacing:2.4px;
+
+  color:var(--primary-light);
+
+  font-weight:700;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+  .logo-icon{
+
+    width:54px;
+    height:54px;
+
+    border-radius:18px;
+
+  }
+
+  .f-letter,
+  .a-letter{
+    font-size:1.55rem;
+  }
+
+  .logo-text h2{
+    font-size:1rem;
+  }
+
+  .logo-text span{
+    font-size:.6rem;
+  }
+
+}
+
+@media(max-width:540px){
+
+  .logo-text span{
+    display:none;
+  }
+
+}
