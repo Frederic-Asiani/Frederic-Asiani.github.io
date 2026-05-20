@@ -67,11 +67,20 @@
 
     <div class="container navbar">
 
+      <!-- LOGO -->
       <a href="#" class="logo">
         Frederic Asiani
       </a>
 
-      <nav class="nav">
+      <!-- MOBILE MENU BUTTON -->
+      <button class="menu-toggle" id="menu-toggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+      <!-- NAVIGATION -->
+      <nav class="nav" id="mobile-menu">
 
         <a href="#about">
           About
@@ -364,18 +373,6 @@
               using business intelligence tools.
             </p>
 
-            <div class="project-metrics">
-
-              <span>
-                20K+ Records
-              </span>
-
-              <span>
-                BI Dashboard
-              </span>
-
-            </div>
-
           </div>
 
         </article>
@@ -406,18 +403,6 @@
               Data-driven platform for economic analysis,
               forecasting and policy decision support.
             </p>
-
-            <div class="project-metrics">
-
-              <span>
-                Forecast Models
-              </span>
-
-              <span>
-                Statistical Analysis
-              </span>
-
-            </div>
 
           </div>
 
@@ -528,129 +513,33 @@
       <div class="stack-grid">
 
         <div class="stack-card">
-
           <i class="fa-brands fa-python"></i>
-
-          <h3>
-            Python
-          </h3>
-
+          <h3>Python</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-database"></i>
-
-          <h3>
-            SQL
-          </h3>
-
+          <h3>SQL</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-solid fa-chart-column"></i>
-
-          <h3>
-            Power BI
-          </h3>
-
+          <h3>Power BI</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-js"></i>
-
-          <h3>
-            JavaScript
-          </h3>
-
+          <h3>JavaScript</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-react"></i>
-
-          <h3>
-            React
-          </h3>
-
+          <h3>React</h3>
         </div>
 
         <div class="stack-card">
-
           <i class="fa-brands fa-github"></i>
-
-          <h3>
-            GitHub
-          </h3>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       GITHUB ANALYTICS
-  ========================== -->
-
-  <section id="github" class="section">
-
-    <div class="container">
-
-      <div class="section-heading center">
-
-        <span>
-          GITHUB ANALYTICS
-        </span>
-
-        <h2>
-          Development Activity & Engineering Metrics
-        </h2>
-
-        <p class="github-subtitle">
-
-          Live GitHub statistics showcasing
-          development consistency, technologies
-          and coding activity.
-
-        </p>
-
-      </div>
-
-      <div class="github-stats">
-
-        <!-- MAIN STATS -->
-        <div class="github-card">
-
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=Frederic-Asiani&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&icon_color=60A5FA&text_color=FFFFFF"
-            alt="GitHub Stats"
-          />
-
-        </div>
-
-        <!-- STREAK -->
-        <div class="github-card">
-
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=Frederic-Asiani&theme=tokyonight&hide_border=true&background=0D1117&ring=60A5FA&fire=60A5FA&currStreakLabel=FFFFFF"
-            alt="GitHub Streak"
-          />
-
-        </div>
-
-        <!-- LANGUAGES -->
-        <div class="github-card full-width">
-
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frederic-Asiani&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&text_color=FFFFFF"
-            alt="Top Languages"
-          />
-
+          <h3>GitHub</h3>
         </div>
 
       </div>
@@ -720,4 +609,23 @@
 
   </section>
 
+  <!-- =========================
+       MOBILE MENU SCRIPT
+  ========================== -->
+
+  <script>
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("active");
+
+    });
+
+  </script>
+
 </body>
+
+</html>
