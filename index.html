@@ -11,8 +11,13 @@
   />
 
   <title>
-    Frederic Asiani — Premium Portfolio
+    Frederic Asiani — Data Intelligence Portfolio
   </title>
+
+  <meta
+    name="description"
+    content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & Web Systems Creator."
+  />
 
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,523 +35,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
-  <style>
-
-    /* =========================
-       RESET
-    ========================== */
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:#040816;
-      color:white;
-      overflow-x:hidden;
-    }
-
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
-
-    /* =========================
-       HEADER
-    ========================== */
-
-    .premium-header{
-      width:100%;
-      position:fixed;
-      top:0;
-      left:0;
-      z-index:999;
-      padding:20px;
-    }
-
-    .header-container{
-
-      max-width:1250px;
-      margin:auto;
-
-      background:rgba(7,12,28,0.88);
-
-      border:1px solid rgba(255,255,255,0.06);
-
-      backdrop-filter:blur(18px);
-
-      border-radius:32px;
-
-      padding:18px 25px;
-
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-
-      box-shadow:
-      0 15px 40px rgba(0,0,0,0.35);
-    }
-
-    /* =========================
-       BRAND
-    ========================== */
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:18px;
-    }
-
-    .logo-box{
-
-      width:72px;
-      height:72px;
-
-      border-radius:24px;
-
-      background:linear-gradient(
-      135deg,
-      #3b82f6,
-      #2563eb
-      );
-
-      display:flex;
-      align-items:center;
-      justify-content:center;
-
-      position:relative;
-
-      box-shadow:
-      0 10px 30px rgba(37,99,235,0.4);
-    }
-
-    .logo-box span{
-      font-size:30px;
-      font-weight:800;
-      color:white;
-    }
-
-    .status-dot{
-
-      width:14px;
-      height:14px;
-
-      border-radius:50%;
-
-      background:#22c55e;
-
-      border:2px solid #08101f;
-
-      position:absolute;
-      top:8px;
-      right:8px;
-    }
-
-    .brand-text{
-      display:flex;
-      align-items:flex-end;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .brand-text h1{
-      font-size:44px;
-      font-weight:800;
-      line-height:1;
-      letter-spacing:-1px;
-    }
-
-    .brand-text span{
-      font-size:28px;
-      color:#3b82f6;
-      font-weight:700;
-      margin-bottom:3px;
-    }
-
-    .brand-text p{
-      color:#6f7ea8;
-      font-size:20px;
-      margin-bottom:6px;
-    }
-
-    /* =========================
-       NAVIGATION
-    ========================== */
-
-    .nav-links{
-      display:flex;
-      align-items:center;
-      gap:16px;
-    }
-
-    .nav-links a{
-
-      color:#c7d2fe;
-
-      font-size:15px;
-      font-weight:500;
-
-      transition:0.3s ease;
-    }
-
-    .nav-links a:hover{
-      color:#60a5fa;
-    }
-
-    /* =========================
-       BUTTONS
-    ========================== */
-
-    .header-actions{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-
-    .circle-btn{
-
-      width:60px;
-      height:60px;
-
-      border:none;
-
-      border-radius:22px;
-
-      background:rgba(255,255,255,0.04);
-
-      border:1px solid rgba(255,255,255,0.06);
-
-      color:white;
-
-      font-size:22px;
-
-      cursor:pointer;
-
-      transition:0.3s ease;
-
-      backdrop-filter:blur(10px);
-    }
-
-    .circle-btn:hover{
-      background:#2563eb;
-      transform:translateY(-4px);
-    }
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero{
-
-      min-height:100vh;
-
-      display:flex;
-      align-items:center;
-      justify-content:center;
-
-      padding:180px 20px 100px;
-
-      position:relative;
-      overflow:hidden;
-    }
-
-    .hero::before{
-
-      content:"";
-
-      position:absolute;
-
-      width:700px;
-      height:700px;
-
-      background:radial-gradient(
-      circle,
-      rgba(59,130,246,0.25),
-      transparent 70%
-      );
-
-      top:-200px;
-      right:-200px;
-    }
-
-    .hero-container{
-
-      max-width:1200px;
-      width:100%;
-
-      display:grid;
-      grid-template-columns:1.2fr 1fr;
-      gap:60px;
-
-      align-items:center;
-    }
-
-    /* LEFT */
-
-    .hero-left .badge{
-
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-
-      padding:12px 18px;
-
-      border-radius:50px;
-
-      background:rgba(59,130,246,0.08);
-
-      border:1px solid rgba(59,130,246,0.15);
-
-      color:#93c5fd;
-
-      margin-bottom:25px;
-
-      font-size:14px;
-      font-weight:600;
-    }
-
-    .hero-left .badge .mini-dot{
-
-      width:10px;
-      height:10px;
-
-      border-radius:50%;
-      background:#22c55e;
-    }
-
-    .hero-left h2{
-
-      font-size:72px;
-      line-height:1.05;
-
-      font-weight:900;
-
-      letter-spacing:-2px;
-
-      margin-bottom:25px;
-    }
-
-    .hero-left p{
-
-      color:#94a3b8;
-
-      font-size:19px;
-
-      line-height:1.8;
-
-      max-width:650px;
-
-      margin-bottom:35px;
-    }
-
-    .hero-buttons{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-
-      padding:16px 28px;
-
-      border-radius:18px;
-
-      font-weight:600;
-
-      transition:0.3s ease;
-    }
-
-    .btn-primary{
-
-      background:linear-gradient(
-      135deg,
-      #3b82f6,
-      #2563eb
-      );
-
-      color:white;
-    }
-
-    .btn-primary:hover{
-      transform:translateY(-4px);
-    }
-
-    .btn-secondary{
-
-      background:rgba(255,255,255,0.04);
-
-      border:1px solid rgba(255,255,255,0.08);
-
-      color:white;
-    }
-
-    .btn-secondary:hover{
-      background:#111827;
-    }
-
-    /* RIGHT */
-
-    .hero-card{
-
-      background:rgba(10,15,35,0.9);
-
-      border:1px solid rgba(255,255,255,0.06);
-
-      border-radius:32px;
-
-      padding:30px;
-
-      backdrop-filter:blur(15px);
-
-      box-shadow:
-      0 20px 40px rgba(0,0,0,0.35);
-    }
-
-    .terminal-top{
-      display:flex;
-      gap:10px;
-      margin-bottom:25px;
-    }
-
-    .terminal-top span{
-      width:12px;
-      height:12px;
-      border-radius:50%;
-    }
-
-    .terminal-top span:nth-child(1){
-      background:#ef4444;
-    }
-
-    .terminal-top span:nth-child(2){
-      background:#f59e0b;
-    }
-
-    .terminal-top span:nth-child(3){
-      background:#22c55e;
-    }
-
-    .terminal-content p{
-
-      color:#93c5fd;
-
-      margin-bottom:16px;
-
-      font-family:monospace;
-
-      font-size:15px;
-    }
-
-    .profile-box{
-
-      margin-top:35px;
-
-      display:flex;
-      align-items:center;
-      gap:18px;
-    }
-
-    .profile-box img{
-
-      width:90px;
-      height:90px;
-
-      border-radius:24px;
-
-      object-fit:cover;
-
-      border:3px solid rgba(59,130,246,0.4);
-    }
-
-    .profile-info h3{
-      font-size:24px;
-      margin-bottom:5px;
-    }
-
-    .profile-info span{
-      color:#60a5fa;
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
-
-    @media(max-width:992px){
-
-      .hero-container{
-        grid-template-columns:1fr;
-      }
-
-      .hero-left h2{
-        font-size:52px;
-      }
-
-      .nav-links{
-        display:none;
-      }
-
-    }
-
-    @media(max-width:768px){
-
-      .premium-header{
-        padding:14px;
-      }
-
-      .header-container{
-        padding:16px;
-        border-radius:24px;
-      }
-
-      .logo-box{
-        width:58px;
-        height:58px;
-      }
-
-      .logo-box span{
-        font-size:24px;
-      }
-
-      .brand-text h1{
-        font-size:30px;
-      }
-
-      .brand-text span{
-        font-size:20px;
-      }
-
-      .brand-text p{
-        display:none;
-      }
-
-      .circle-btn{
-        width:50px;
-        height:50px;
-        font-size:18px;
-      }
-
-      .hero{
-        padding-top:150px;
-      }
-
-      .hero-left h2{
-        font-size:42px;
-      }
-
-      .hero-left p{
-        font-size:17px;
-      }
-
-    }
-
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
@@ -556,62 +46,45 @@
        HEADER
   ========================== -->
 
-  <header class="premium-header">
+  <header class="header">
 
-    <div class="header-container">
+    <div class="container navbar">
 
-      <!-- LEFT -->
-      <div class="brand">
+      <!-- LOGO -->
+      <a href="#" class="logo">
 
-        <div class="logo-box">
+        Frederic Asiani
 
-          <span>FA</span>
+      </a>
 
-          <div class="status-dot"></div>
+      <!-- NAVIGATION -->
+      <nav class="nav">
 
-        </div>
-
-        <div class="brand-text">
-
-          <h1>Frederic</h1>
-
-          <span>.dev</span>
-
-          <p>// data analyst</p>
-
-        </div>
-
-      </div>
-
-      <!-- CENTER -->
-      <nav class="nav-links">
-
-        <a href="#">
+        <a href="#about">
           About
         </a>
 
-        <a href="#">
+        <a href="#projects">
           Projects
         </a>
 
-        <a href="#">
+        <a href="#experience">
           Experience
         </a>
 
-        <a href="#">
+        <a href="#stack">
+          Stack
+        </a>
+
+        <a href="#github">
+          GitHub
+        </a>
+
+        <a href="#contact">
           Contact
         </a>
 
       </nav>
-
-      <!-- RIGHT -->
-      <div class="header-actions">
-
-        <button class="circle-btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-      </div>
 
     </div>
 
@@ -623,28 +96,34 @@
 
   <section class="hero">
 
-    <div class="hero-container">
+    <div class="gradient"></div>
+
+    <div class="container hero-content">
 
       <!-- LEFT -->
-      <div class="hero-left">
+      <div class="hero-text">
 
-        <div class="badge">
+        <!-- STATUS -->
+        <div class="status">
 
-          <span class="mini-dot"></span>
+          <span class="dot"></span>
 
           Available for Data & BI Projects
 
         </div>
 
-        <h2>
+        <!-- TITLE -->
+        <h1>
 
           Building
           Data-Driven Systems
-          For Strategic Decisions
+          for Strategic
+          Decision-Making
 
-        </h2>
+        </h1>
 
-        <p>
+        <!-- DESCRIPTION -->
+        <p class="hero-description">
 
           Data Analyst, Economic Intelligence Specialist
           and Web Systems Creator focused on analytics,
@@ -653,15 +132,59 @@
 
         </p>
 
+        <!-- BUTTONS -->
         <div class="hero-buttons">
 
-          <a href="#" class="btn btn-primary">
+          <a href="#projects" class="btn primary">
+
+            <i class="fa-solid fa-chart-column"></i>
+
             View Projects
+
           </a>
 
-          <a href="#" class="btn btn-secondary">
+          <a href="#contact" class="btn secondary">
+
+            <i class="fa-solid fa-envelope"></i>
+
             Contact Me
+
           </a>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+
+          <div class="stat-card">
+
+            <h3>10+</h3>
+
+            <p>
+              Analytics Projects
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>SQL</h3>
+
+            <p>
+              BI Systems
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <h3>Power BI</h3>
+
+            <p>
+              Dashboards
+            </p>
+
+          </div>
 
         </div>
 
@@ -670,9 +193,10 @@
       <!-- RIGHT -->
       <div class="hero-right">
 
-        <div class="hero-card">
+        <!-- TERMINAL -->
+        <div class="terminal">
 
-          <div class="terminal-top">
+          <div class="terminal-header">
 
             <span></span>
             <span></span>
@@ -680,14 +204,14 @@
 
           </div>
 
-          <div class="terminal-content">
+          <div class="terminal-body">
 
             <p>
               > initializing analytics systems...
             </p>
 
             <p>
-              > loading BI infrastructure...
+              > loading business intelligence stack...
             </p>
 
             <p>
@@ -704,26 +228,535 @@
 
           </div>
 
-          <div class="profile-box">
+        </div>
+
+        <!-- AVATAR -->
+        <div class="hero-avatar">
+
+          <img
+            src="https://avatars.githubusercontent.com/u/135480796?v=4"
+            alt="Frederic Asiani"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about" class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>
+          WHO I AM
+        </span>
+
+        <h2>
+          Data & Economic Intelligence Specialist
+        </h2>
+
+      </div>
+
+      <div class="about-grid">
+
+        <!-- CARD -->
+        <div class="about-card">
+
+          <i class="fa-solid fa-chart-line"></i>
+
+          <h3>
+            Data Analytics
+          </h3>
+
+          <p>
+
+            Transforming complex datasets into
+            actionable business insights through
+            analytics and visualization.
+
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="about-card">
+
+          <i class="fa-solid fa-database"></i>
+
+          <h3>
+            Business Intelligence
+          </h3>
+
+          <p>
+
+            Building dashboards and decision-support
+            systems using SQL, Power BI and Python.
+
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="about-card">
+
+          <i class="fa-solid fa-globe"></i>
+
+          <h3>
+            Web Systems
+          </h3>
+
+          <p>
+
+            Creating modern web platforms with
+            premium interfaces and scalable systems.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
+
+  <section
+    id="projects"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="section-heading center">
+
+        <span>
+          FEATURED WORK
+        </span>
+
+        <h2>
+          Professional Projects
+        </h2>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT -->
+        <article class="project-card">
+
+          <div class="project-image">
 
             <img
-              src="https://avatars.githubusercontent.com/u/135480796?v=4"
-              alt="Frederic"
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+              alt="Dashboard"
             />
 
-            <div class="profile-info">
+          </div>
 
-              <h3>
-                Frederic Asiani
-              </h3>
+          <div class="project-content">
+
+            <span class="project-tag">
+
+              Power BI • SQL • Python
+
+            </span>
+
+            <h3>
+              Labor Market Analytics Dashboard
+            </h3>
+
+            <p>
+
+              Interactive dashboard designed for labor
+              market monitoring and workforce analytics
+              using business intelligence tools.
+
+            </p>
+
+            <div class="project-metrics">
 
               <span>
-                Data Intelligence Specialist
+                20K+ Records
+              </span>
+
+              <span>
+                BI Dashboard
               </span>
 
             </div>
 
           </div>
+
+        </article>
+
+        <!-- PROJECT -->
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+              alt="Analytics"
+            />
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-tag">
+
+              Economics • Data Science
+
+            </span>
+
+            <h3>
+              Economic Intelligence Platform
+            </h3>
+
+            <p>
+
+              Data-driven platform for economic analysis,
+              forecasting and policy decision support.
+
+            </p>
+
+            <div class="project-metrics">
+
+              <span>
+                Forecast Models
+              </span>
+
+              <span>
+                Statistical Analysis
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       EXPERIENCE
+  ========================== -->
+
+  <section
+    id="experience"
+    class="section"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>
+          EXPERIENCE
+        </span>
+
+        <h2>
+          Professional Background
+        </h2>
+
+      </div>
+
+      <div class="timeline">
+
+        <!-- ITEM -->
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+              Labor Inspector
+            </h3>
+
+            <span>
+              Compliance • Workforce Analytics
+            </span>
+
+            <p>
+
+              Analysis of labor regulations,
+              workforce indicators and social
+              compliance systems.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+              Data Analyst
+            </h3>
+
+            <span>
+              SQL • Python • Business Intelligence
+            </span>
+
+            <p>
+
+              Development of analytical dashboards,
+              data pipelines and decision-support
+              systems.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       STACK
+  ========================== -->
+
+  <section
+    id="stack"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="section-heading center">
+
+        <span>
+          TECHNOLOGIES
+        </span>
+
+        <h2>
+          Tech Stack
+        </h2>
+
+      </div>
+
+      <div class="stack-grid">
+
+        <div class="stack-card">
+
+          <i class="fa-brands fa-python"></i>
+
+          <h3>
+            Python
+          </h3>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-solid fa-database"></i>
+
+          <h3>
+            SQL
+          </h3>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-solid fa-chart-column"></i>
+
+          <h3>
+            Power BI
+          </h3>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-brands fa-js"></i>
+
+          <h3>
+            JavaScript
+          </h3>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-brands fa-react"></i>
+
+          <h3>
+            React
+          </h3>
+
+        </div>
+
+        <div class="stack-card">
+
+          <i class="fa-brands fa-github"></i>
+
+          <h3>
+            GitHub
+          </h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       GITHUB
+  ========================== -->
+
+  <section
+    id="github"
+    class="section"
+  >
+
+    <div class="container">
+
+      <div class="section-heading center">
+
+        <span>
+          GITHUB ANALYTICS
+        </span>
+
+        <h2>
+          Development Activity & Engineering Metrics
+        </h2>
+
+        <p class="github-subtitle">
+
+          Live GitHub statistics showcasing
+          development consistency, technologies
+          and coding activity.
+
+        </p>
+
+      </div>
+
+      <div class="github-stats">
+
+        <!-- STATS -->
+        <div class="github-card">
+
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=Frederic-Asiani&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&icon_color=60A5FA&text_color=FFFFFF"
+            alt="GitHub Stats"
+          />
+
+        </div>
+
+        <!-- STREAK -->
+        <div class="github-card">
+
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Frederic-Asiani&theme=tokyonight&hide_border=true&background=0D1117&ring=60A5FA&fire=60A5FA&currStreakLabel=FFFFFF"
+            alt="GitHub Streak"
+          />
+
+        </div>
+
+        <!-- LANGUAGES -->
+        <div class="github-card full-width">
+
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frederic-Asiani&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=60A5FA&text_color=FFFFFF"
+            alt="Top Languages"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section
+    id="contact"
+    class="section dark"
+  >
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <span>
+          CONTACT
+        </span>
+
+        <h2>
+          Let's Build Something Strategic
+        </h2>
+
+        <p>
+
+          Available for data analytics,
+          business intelligence and modern
+          web platform projects.
+
+        </p>
+
+        <div class="contact-links">
+
+          <a href="mailto:contact@example.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            contact@example.com
+
+          </a>
+
+          <a
+            href="https://github.com/Frederic-Asiani"
+            target="_blank"
+          >
+
+            <i class="fa-brands fa-github"></i>
+
+            GitHub
+
+          </a>
+
+          <a href="#">
+
+            <i class="fa-brands fa-linkedin"></i>
+
+            LinkedIn
+
+          </a>
 
         </div>
 
