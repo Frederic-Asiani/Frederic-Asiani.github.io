@@ -19,23 +19,6 @@
     content="Frederic Asiani — Data Analyst, Economic Intelligence Specialist & Web Systems Creator."
   />
 
-  <!-- SEO -->
-  <meta property="og:title" content="Frederic Asiani Portfolio" />
-
-  <meta
-    property="og:description"
-    content="Data Analyst, Economic Intelligence Specialist & Web Systems Creator."
-  />
-
-  <meta
-    property="og:image"
-    content="https://avatars.githubusercontent.com/u/135480796?v=4"
-  />
-
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -72,8 +55,12 @@
         Frederic Asiani
       </a>
 
-      <!-- MOBILE MENU BUTTON -->
-      <button class="menu-toggle" id="menu-toggle">
+      <!-- MOBILE BUTTON -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open Menu"
+      >
 
         <i class="fa-solid fa-bars"></i>
 
@@ -153,41 +140,6 @@
           <a href="#contact" class="btn secondary">
             Contact Me
           </a>
-
-        </div>
-
-        <!-- STATS -->
-        <div class="stats">
-
-          <div class="stat-card">
-
-            <h3>10+</h3>
-
-            <p>
-              Analytics Projects
-            </p>
-
-          </div>
-
-          <div class="stat-card">
-
-            <h3>SQL</h3>
-
-            <p>
-              BI Systems
-            </p>
-
-          </div>
-
-          <div class="stat-card">
-
-            <h3>Power BI</h3>
-
-            <p>
-              Dashboards
-            </p>
-
-          </div>
 
         </div>
 
@@ -281,8 +233,7 @@
 
           <p>
             Transforming complex datasets into
-            actionable business insights through
-            analytics and visualization.
+            actionable business insights.
           </p>
 
         </div>
@@ -297,7 +248,7 @@
 
           <p>
             Building dashboards and decision-support
-            systems using SQL, Power BI and Python.
+            systems using SQL and Power BI.
           </p>
 
         </div>
@@ -368,9 +319,8 @@
             </h3>
 
             <p>
-              Interactive dashboard designed for labor
-              market monitoring and workforce analytics
-              using business intelligence tools.
+              Interactive dashboard for workforce
+              analytics and labor market monitoring.
             </p>
 
           </div>
@@ -400,8 +350,8 @@
             </h3>
 
             <p>
-              Data-driven platform for economic analysis,
-              forecasting and policy decision support.
+              Platform for economic analysis,
+              forecasting and policy support.
             </p>
 
           </div>
@@ -451,9 +401,8 @@
             </span>
 
             <p>
-              Analysis of labor regulations,
-              workforce indicators and social
-              compliance systems.
+              Analysis of labor regulations
+              and workforce indicators.
             </p>
 
           </div>
@@ -475,71 +424,12 @@
             </span>
 
             <p>
-              Development of analytical dashboards,
-              data pipelines and decision-support
-              systems.
+              Development of dashboards,
+              data pipelines and BI systems.
             </p>
 
           </div>
 
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       STACK
-  ========================== -->
-
-  <section class="section dark">
-
-    <div class="container">
-
-      <div class="section-heading center">
-
-        <span>
-          TECHNOLOGIES
-        </span>
-
-        <h2>
-          Tech Stack
-        </h2>
-
-      </div>
-
-      <div class="stack-grid">
-
-        <div class="stack-card">
-          <i class="fa-brands fa-python"></i>
-          <h3>Python</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-solid fa-database"></i>
-          <h3>SQL</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-solid fa-chart-column"></i>
-          <h3>Power BI</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-brands fa-js"></i>
-          <h3>JavaScript</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-brands fa-react"></i>
-          <h3>React</h3>
-        </div>
-
-        <div class="stack-card">
-          <i class="fa-brands fa-github"></i>
-          <h3>GitHub</h3>
         </div>
 
       </div>
@@ -567,18 +457,18 @@
         </h2>
 
         <p>
-          Available for data analytics,
-          business intelligence and modern
-          web platform projects.
+          Available for analytics,
+          business intelligence and
+          digital platform projects.
         </p>
 
         <div class="contact-links">
 
-          <a href="mailto:contact@exemple.com">
+          <a href="mailto:contact@example.com">
 
             <i class="fa-solid fa-envelope"></i>
 
-            contact@exemple.com
+            contact@example.com
 
           </a>
 
@@ -621,6 +511,37 @@
     menuToggle.addEventListener("click", () => {
 
       mobileMenu.classList.toggle("active");
+
+      // CHANGE ICON
+      const icon = menuToggle.querySelector("i");
+
+      if (mobileMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+      } else {
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+    // AUTO CLOSE MENU ON CLICK
+    document.querySelectorAll(".nav a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+      });
 
     });
 
