@@ -12,4 +12,24 @@ if(field){field.addEventListener('input', () => {
  if(empty) empty.classList.toggle('hide', visible > 0);
 });}
 
-const menuButton=document.querySelector('.menu-button');const siteNav=document.querySelector('#site-nav');if(menuButton&&siteNav){const closeMenu=()=>{siteNav.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Ouvrir le menu');};menuButton.addEventListener('click',()=>{const open=!siteNav.classList.contains('is-open');siteNav.classList.toggle('is-open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');});siteNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});window.addEventListener('resize',()=>{if(window.innerWidth>850)closeMenu()});}
+const menuButton=document.querySelector('.menu-button');
+const siteNav=document.querySelector('#site-nav');
+if(menuButton&&siteNav){
+ const english=document.documentElement.lang==='en';
+ const setMenu=open=>{
+  siteNav.classList.toggle('is-open',open);
+  menuButton.setAttribute('aria-expanded',String(open));
+  menuButton.setAttribute('aria-label',open?(english?'Close menu':'Fermer le menu'):(english?'Open menu':'Ouvrir le menu'));
+ };
+ menuButton.addEventListener('click',()=>setMenu(!siteNav.classList.contains('is-open')));
+ siteNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&siteNav.classList.contains('is-open')){setMenu(false);menuButton.focus();}});
+ document.addEventListener('click',event=>{if(siteNav.classList.contains('is-open')&&!siteNav.contains(event.target)&&!menuButton.contains(event.target))setMenu(false);});
+ window.addEventListener('resize',()=>{if(window.innerWidth>850)setMenu(false)});
+}
+// Hide broken remote headshot; initials remain visible behind the photo.
+document.querySelectorAll('.dash-avatar img').forEach(img=>{
+ const hide=()=>img.classList.add('is-unavailable');
+ img.addEventListener('error',hide);
+ if(img.complete && img.naturalWidth===0)hide();
+});

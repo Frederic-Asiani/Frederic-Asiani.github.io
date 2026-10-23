@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://frederic-asiani.github.io/sitemap.xml

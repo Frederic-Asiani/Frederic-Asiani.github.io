@@ -74,3 +74,17 @@ python -m http.server 8000
 ```
 
 Puis ouvrir `http://localhost:8000` (ne pas ouvrir les fichiers HTML via `file://`).
+
+
+## Version V5 — Études de cas orientées décisions (2026-10-23)
+- Quatre analyses métier avec problème, méthode, résultats issus des bases simulées, graphiques, recommandations et limites.
+- Laboratoires SQL interactifs existants conservés (24 requêtes, 4 bases SQLite, mode aperçu).
+- Page française enrichie : synthèse des résultats, offres de prestations, démarche d’intervention, FAQ et boutons de contact.
+- Nouvelle page anglaise `/en/` : présentation synthétique pour les visiteurs internationaux.
+- Livrables produits sans ajout de données bancaires personnelles dans les fichiers publics.
+
+
+## Version Premium V7 (octobre 2026)
+- Nouveau module graphique d’accueil : cinq observations mensuelles du projet bancaire fictif (223, 204, 222, 189, 223 transactions validées). Les observations proviennent du projet SQL, pas de vrais clients.
+- Navigation mobile à deux colonnes, boutons tactiles et carte analytique adaptative.
+- Toutes les fonctionnalités et ressources de la V6 sont conservées (SQL, Excel anonymisé, Tableau, Power BI, WhatsApp, recherches, formation, anglais).
