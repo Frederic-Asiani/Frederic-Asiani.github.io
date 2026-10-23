@@ -1,0 +1,694 @@
+{
+  "01-surveillance-transactions": {
+    "tables": {
+      "clients": 180,
+      "comptes": 260,
+      "transactions": 2012
+    },
+    "analyses": [
+      {
+        "requete": 1,
+        "colonnes": [
+          "mois",
+          "nb_operations",
+          "volume_usd",
+          "ticket_moyen_usd"
+        ],
+        "nombre_lignes": 9,
+        "apercu": [
+          {
+            "mois": "2026-01",
+            "nb_operations": 223,
+            "volume_usd": 48913.42,
+            "ticket_moyen_usd": 219.34
+          },
+          {
+            "mois": "2026-02",
+            "nb_operations": 204,
+            "volume_usd": 54441.49,
+            "ticket_moyen_usd": 266.87
+          },
+          {
+            "mois": "2026-03",
+            "nb_operations": 222,
+            "volume_usd": 56145.6,
+            "ticket_moyen_usd": 252.91
+          },
+          {
+            "mois": "2026-04",
+            "nb_operations": 189,
+            "volume_usd": 43052.67,
+            "ticket_moyen_usd": 227.79
+          },
+          {
+            "mois": "2026-05",
+            "nb_operations": 223,
+            "volume_usd": 56308.85,
+            "ticket_moyen_usd": 252.51
+          },
+          {
+            "mois": "2026-06",
+            "nb_operations": 207,
+            "volume_usd": 50989.03,
+            "ticket_moyen_usd": 246.32
+          },
+          {
+            "mois": "2026-07",
+            "nb_operations": 229,
+            "volume_usd": 54970.53,
+            "ticket_moyen_usd": 240.05
+          },
+          {
+            "mois": "2026-08",
+            "nb_operations": 232,
+            "volume_usd": 55313.88,
+            "ticket_moyen_usd": 238.42
+          }
+        ]
+      },
+      {
+        "requete": 2,
+        "colonnes": [
+          "canal",
+          "nb",
+          "volume_usd",
+          "part_pct"
+        ],
+        "nombre_lignes": 4,
+        "apercu": [
+          {
+            "canal": "Agence",
+            "nb": 509,
+            "volume_usd": 131363.31,
+            "part_pct": 26.18
+          },
+          {
+            "canal": "Mobile",
+            "nb": 490,
+            "volume_usd": 124596.64,
+            "part_pct": 25.21
+          },
+          {
+            "canal": "Carte",
+            "nb": 507,
+            "volume_usd": 119348.62,
+            "part_pct": 26.08
+          },
+          {
+            "canal": "Web",
+            "nb": 438,
+            "volume_usd": 88553.55,
+            "part_pct": 22.53
+          }
+        ]
+      },
+      {
+        "requete": 3,
+        "colonnes": [
+          "compte_id",
+          "heure",
+          "nb",
+          "montant_total_usd"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "compte_id": 12,
+            "heure": "2026-06-18 10",
+            "nb": 12,
+            "montant_total_usd": 9865.5
+          }
+        ]
+      },
+      {
+        "requete": 4,
+        "colonnes": [
+          "transaction_id",
+          "compte_id",
+          "date_operation",
+          "montant_usd",
+          "moyenne_compte_usd"
+        ],
+        "nombre_lignes": 25,
+        "apercu": [
+          {
+            "transaction_id": 119,
+            "compte_id": 234,
+            "date_operation": "2026-02-17 16:50:40",
+            "montant_usd": 4401.66,
+            "moyenne_compte_usd": 640.91
+          },
+          {
+            "transaction_id": 846,
+            "compte_id": 159,
+            "date_operation": "2026-05-09 03:38:15",
+            "montant_usd": 4051.69,
+            "moyenne_compte_usd": 703.94
+          },
+          {
+            "transaction_id": 301,
+            "compte_id": 125,
+            "date_operation": "2026-03-24 20:41:57",
+            "montant_usd": 3666.84,
+            "moyenne_compte_usd": 582.09
+          },
+          {
+            "transaction_id": 1726,
+            "compte_id": 202,
+            "date_operation": "2026-03-15 05:04:59",
+            "montant_usd": 3561.76,
+            "moyenne_compte_usd": 965.21
+          },
+          {
+            "transaction_id": 305,
+            "compte_id": 219,
+            "date_operation": "2026-08-02 11:59:16",
+            "montant_usd": 3472.18,
+            "moyenne_compte_usd": 989.05
+          },
+          {
+            "transaction_id": 1828,
+            "compte_id": 149,
+            "date_operation": "2026-08-19 00:01:14",
+            "montant_usd": 3011.12,
+            "moyenne_compte_usd": 541.89
+          },
+          {
+            "transaction_id": 445,
+            "compte_id": 91,
+            "date_operation": "2026-05-31 01:00:01",
+            "montant_usd": 2682.94,
+            "moyenne_compte_usd": 543.32
+          },
+          {
+            "transaction_id": 1222,
+            "compte_id": 193,
+            "date_operation": "2026-09-03 23:48:39",
+            "montant_usd": 2401.89,
+            "moyenne_compte_usd": 620.14
+          }
+        ]
+      },
+      {
+        "requete": 5,
+        "colonnes": [
+          "pays",
+          "nb_operations",
+          "volume_usd"
+        ],
+        "nombre_lignes": 3,
+        "apercu": [
+          {
+            "pays": "Zambie",
+            "nb_operations": 110,
+            "volume_usd": 27466.0
+          },
+          {
+            "pays": "Afrique du Sud",
+            "nb_operations": 102,
+            "volume_usd": 20785.06
+          },
+          {
+            "pays": "France",
+            "nb_operations": 97,
+            "volume_usd": 19343.59
+          }
+        ]
+      },
+      {
+        "requete": 6,
+        "colonnes": [
+          "total",
+          "rejetees",
+          "taux_rejet_pct"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "total": 2012,
+            "rejetees": 68,
+            "taux_rejet_pct": 3.38
+          }
+        ]
+      }
+    ]
+  },
+  "02-risque-credit": {
+    "tables": {
+      "emprunteurs": 180,
+      "prets": 290,
+      "remboursements": 1462
+    },
+    "analyses": [
+      {
+        "requete": 1,
+        "colonnes": [
+          "nombre_prets",
+          "exposition_totale_usd",
+          "exposition_npl_usd",
+          "ratio_npl_pct"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "nombre_prets": 290,
+            "exposition_totale_usd": 5292002.44,
+            "exposition_npl_usd": 684331.1,
+            "ratio_npl_pct": 12.93
+          }
+        ]
+      },
+      {
+        "requete": 2,
+        "colonnes": [
+          "tranche",
+          "prets",
+          "exposition_usd"
+        ],
+        "nombre_lignes": 5,
+        "apercu": [
+          {
+            "tranche": "00.A jour",
+            "prets": 148,
+            "exposition_usd": 2752442.88
+          },
+          {
+            "tranche": "01.1-30 jours",
+            "prets": 63,
+            "exposition_usd": 1142237.24
+          },
+          {
+            "tranche": "02.31-60 jours",
+            "prets": 22,
+            "exposition_usd": 424102.18
+          },
+          {
+            "tranche": "03.61-89 jours",
+            "prets": 18,
+            "exposition_usd": 288889.04
+          },
+          {
+            "tranche": "04.90+ jours",
+            "prets": 39,
+            "exposition_usd": 684331.1
+          }
+        ]
+      },
+      {
+        "requete": 3,
+        "colonnes": [
+          "trimestre_octroi",
+          "nb_prets",
+          "encours_usd",
+          "ratio_npl_pct"
+        ],
+        "nombre_lignes": 10,
+        "apercu": [
+          {
+            "trimestre_octroi": "2024-T1",
+            "nb_prets": 25,
+            "encours_usd": 366532.46,
+            "ratio_npl_pct": 18.36
+          },
+          {
+            "trimestre_octroi": "2024-T2",
+            "nb_prets": 31,
+            "encours_usd": 595272.25,
+            "ratio_npl_pct": 18.4
+          },
+          {
+            "trimestre_octroi": "2024-T3",
+            "nb_prets": 28,
+            "encours_usd": 501024.53,
+            "ratio_npl_pct": 6.15
+          },
+          {
+            "trimestre_octroi": "2024-T4",
+            "nb_prets": 33,
+            "encours_usd": 541411.42,
+            "ratio_npl_pct": 20.86
+          },
+          {
+            "trimestre_octroi": "2025-T1",
+            "nb_prets": 31,
+            "encours_usd": 417320.22,
+            "ratio_npl_pct": 6.01
+          },
+          {
+            "trimestre_octroi": "2025-T2",
+            "nb_prets": 20,
+            "encours_usd": 467947.17,
+            "ratio_npl_pct": 14.78
+          },
+          {
+            "trimestre_octroi": "2025-T3",
+            "nb_prets": 31,
+            "encours_usd": 578114.97,
+            "ratio_npl_pct": 19.99
+          },
+          {
+            "trimestre_octroi": "2025-T4",
+            "nb_prets": 24,
+            "encours_usd": 465804.9,
+            "ratio_npl_pct": 13.76
+          }
+        ]
+      },
+      {
+        "requete": 4,
+        "colonnes": [
+          "produit",
+          "nb_prets",
+          "encours_usd",
+          "pd_moyenne_pct",
+          "perte_attendue_simplifiee_usd"
+        ],
+        "nombre_lignes": 4,
+        "apercu": [
+          {
+            "produit": "Credit equipement",
+            "nb_prets": 83,
+            "encours_usd": 1494614.31,
+            "pd_moyenne_pct": 7.2,
+            "perte_attendue_simplifiee_usd": 47188.47
+          },
+          {
+            "produit": "Credit consommation",
+            "nb_prets": 67,
+            "encours_usd": 1273129.95,
+            "pd_moyenne_pct": 7.4,
+            "perte_attendue_simplifiee_usd": 38059.6
+          },
+          {
+            "produit": "Credit PME",
+            "nb_prets": 71,
+            "encours_usd": 1264897.41,
+            "pd_moyenne_pct": 9.16,
+            "perte_attendue_simplifiee_usd": 52206.24
+          },
+          {
+            "produit": "Credit commerce",
+            "nb_prets": 69,
+            "encours_usd": 1259360.77,
+            "pd_moyenne_pct": 7.28,
+            "perte_attendue_simplifiee_usd": 45630.42
+          }
+        ]
+      },
+      {
+        "requete": 5,
+        "colonnes": [
+          "ecl_base_usd",
+          "ecl_stress_usd",
+          "variation_usd"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "ecl_base_usd": 183084.74,
+            "ecl_stress_usd": 238010.17,
+            "variation_usd": 54925.42
+          }
+        ]
+      },
+      {
+        "requete": 6,
+        "colonnes": [
+          "prets_verifies",
+          "anomalies"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "prets_verifies": 290,
+            "anomalies": 0
+          }
+        ]
+      }
+    ]
+  },
+  "03-agences-clientele": {
+    "tables": {
+      "agences": 7,
+      "clients": 300,
+      "comptes": 450,
+      "soldes_mensuels": 4050,
+      "couts_agences": 63,
+      "activites_clients": 2500
+    },
+    "analyses": [
+      {
+        "requete": 1,
+        "colonnes": [
+          "agence",
+          "clients",
+          "depots_usd",
+          "commissions_usd"
+        ],
+        "nombre_lignes": 7,
+        "apercu": [
+          {
+            "agence": "Lemba",
+            "clients": 34,
+            "depots_usd": 337278.79,
+            "commissions_usd": 2858.72
+          },
+          {
+            "agence": "Limete",
+            "clients": 34,
+            "depots_usd": 320293.44,
+            "commissions_usd": 2342.18
+          },
+          {
+            "agence": "Matete",
+            "clients": 33,
+            "depots_usd": 277364.39,
+            "commissions_usd": 2328.62
+          },
+          {
+            "agence": "Ngaliema",
+            "clients": 32,
+            "depots_usd": 242294.23,
+            "commissions_usd": 1971.23
+          },
+          {
+            "agence": "Kintambo",
+            "clients": 28,
+            "depots_usd": 234588.26,
+            "commissions_usd": 1845.31
+          },
+          {
+            "agence": "Gombe",
+            "clients": 33,
+            "depots_usd": 230988.13,
+            "commissions_usd": 2230.76
+          },
+          {
+            "agence": "N’djili",
+            "clients": 30,
+            "depots_usd": 218412.31,
+            "commissions_usd": 1854.1
+          }
+        ]
+      },
+      {
+        "requete": 2,
+        "colonnes": [
+          "agence",
+          "commissions_usd",
+          "charges_usd",
+          "contribution_commissions_usd"
+        ],
+        "nombre_lignes": 7,
+        "apercu": [
+          {
+            "agence": "Lemba",
+            "commissions_usd": 24951.29,
+            "charges_usd": 41335.42,
+            "contribution_commissions_usd": -16384.13
+          },
+          {
+            "agence": "Gombe",
+            "commissions_usd": 18705.76,
+            "charges_usd": 39023.78,
+            "contribution_commissions_usd": -20318.02
+          },
+          {
+            "agence": "Kintambo",
+            "commissions_usd": 16143.41,
+            "charges_usd": 37558.35,
+            "contribution_commissions_usd": -21414.94
+          },
+          {
+            "agence": "Matete",
+            "commissions_usd": 20793.34,
+            "charges_usd": 42314.41,
+            "contribution_commissions_usd": -21521.07
+          },
+          {
+            "agence": "Limete",
+            "commissions_usd": 20707.26,
+            "charges_usd": 44393.94,
+            "contribution_commissions_usd": -23686.68
+          },
+          {
+            "agence": "N’djili",
+            "commissions_usd": 16624.06,
+            "charges_usd": 42232.22,
+            "contribution_commissions_usd": -25608.16
+          },
+          {
+            "agence": "Ngaliema",
+            "commissions_usd": 17333.97,
+            "charges_usd": 45288.68,
+            "contribution_commissions_usd": -27954.71
+          }
+        ]
+      },
+      {
+        "requete": 3,
+        "colonnes": [
+          "mois",
+          "depots_usd",
+          "variation_usd",
+          "croissance_pct"
+        ],
+        "nombre_lignes": 9,
+        "apercu": [
+          {
+            "mois": "2026-01",
+            "depots_usd": 1647473.17,
+            "variation_usd": null,
+            "croissance_pct": null
+          },
+          {
+            "mois": "2026-02",
+            "depots_usd": 1674127.98,
+            "variation_usd": 26654.81,
+            "croissance_pct": 1.62
+          },
+          {
+            "mois": "2026-03",
+            "depots_usd": 1703417.0,
+            "variation_usd": 29289.02,
+            "croissance_pct": 1.75
+          },
+          {
+            "mois": "2026-04",
+            "depots_usd": 1731971.57,
+            "variation_usd": 28554.57,
+            "croissance_pct": 1.68
+          },
+          {
+            "mois": "2026-05",
+            "depots_usd": 1754377.05,
+            "variation_usd": 22405.48,
+            "croissance_pct": 1.29
+          },
+          {
+            "mois": "2026-06",
+            "depots_usd": 1790471.54,
+            "variation_usd": 36094.49,
+            "croissance_pct": 2.06
+          },
+          {
+            "mois": "2026-07",
+            "depots_usd": 1814642.13,
+            "variation_usd": 24170.59,
+            "croissance_pct": 1.35
+          },
+          {
+            "mois": "2026-08",
+            "depots_usd": 1842478.25,
+            "variation_usd": 27836.12,
+            "croissance_pct": 1.53
+          }
+        ]
+      },
+      {
+        "requete": 4,
+        "colonnes": [
+          "segment_activite",
+          "nb_clients",
+          "flux_90j_usd"
+        ],
+        "nombre_lignes": 3,
+        "apercu": [
+          {
+            "segment_activite": "Actif",
+            "nb_clients": 272,
+            "flux_90j_usd": 639424.67
+          },
+          {
+            "segment_activite": "Inactif 90 jours",
+            "nb_clients": 23,
+            "flux_90j_usd": 0.0
+          },
+          {
+            "segment_activite": "Engage valeur elevee",
+            "nb_clients": 5,
+            "flux_90j_usd": 33537.4
+          }
+        ]
+      },
+      {
+        "requete": 5,
+        "colonnes": [
+          "trimestre",
+          "clients_acquis"
+        ],
+        "nombre_lignes": 19,
+        "apercu": [
+          {
+            "trimestre": "2022-T1",
+            "clients_acquis": 15
+          },
+          {
+            "trimestre": "2022-T2",
+            "clients_acquis": 15
+          },
+          {
+            "trimestre": "2022-T3",
+            "clients_acquis": 15
+          },
+          {
+            "trimestre": "2022-T4",
+            "clients_acquis": 17
+          },
+          {
+            "trimestre": "2023-T1",
+            "clients_acquis": 14
+          },
+          {
+            "trimestre": "2023-T2",
+            "clients_acquis": 15
+          },
+          {
+            "trimestre": "2023-T3",
+            "clients_acquis": 23
+          },
+          {
+            "trimestre": "2023-T4",
+            "clients_acquis": 18
+          }
+        ]
+      },
+      {
+        "requete": 6,
+        "colonnes": [
+          "top10_usd",
+          "depots_total_usd",
+          "concentration_pct"
+        ],
+        "nombre_lignes": 1,
+        "apercu": [
+          {
+            "top10_usd": 244398.63,
+            "depots_total_usd": 1861219.55,
+            "concentration_pct": 13.13
+          }
+        ]
+      }
+    ]
+  }
+}

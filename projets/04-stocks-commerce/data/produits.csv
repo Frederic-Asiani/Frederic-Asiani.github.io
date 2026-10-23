@@ -1,0 +1,13 @@
+id,nom,categorie,cout,prix,seuil
+1,Riz 25 kg,Alimentaire,19.0,26.0,15
+2,Huile 5 L,Alimentaire,10.0,15.0,20
+3,Savon,Hygiène,1.2,2.4,50
+4,Sucre 10 kg,Alimentaire,12.0,18.0,20
+5,Batterie externe,Électronique,8.0,15.0,12
+6,Chargeur,Électronique,3.0,6.0,20
+7,Clavier,Électronique,7.0,13.0,10
+8,Câble USB,Électronique,1.3,3.0,30
+9,Farine 25 kg,Alimentaire,16.0,24.0,15
+10,Shampoing,Hygiène,3.0,6.0,25
+11,Lait en poudre,Alimentaire,6.0,10.0,20
+12,Lessive,Hygiène,4.0,7.0,22

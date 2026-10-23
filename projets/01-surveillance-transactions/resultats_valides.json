@@ -1,0 +1,227 @@
+[
+  {
+    "requete": 1,
+    "colonnes": [
+      "mois",
+      "nb_operations",
+      "volume_usd",
+      "ticket_moyen_usd"
+    ],
+    "nombre_lignes": 9,
+    "apercu": [
+      {
+        "mois": "2026-01",
+        "nb_operations": 223,
+        "volume_usd": 48913.42,
+        "ticket_moyen_usd": 219.34
+      },
+      {
+        "mois": "2026-02",
+        "nb_operations": 204,
+        "volume_usd": 54441.49,
+        "ticket_moyen_usd": 266.87
+      },
+      {
+        "mois": "2026-03",
+        "nb_operations": 222,
+        "volume_usd": 56145.6,
+        "ticket_moyen_usd": 252.91
+      },
+      {
+        "mois": "2026-04",
+        "nb_operations": 189,
+        "volume_usd": 43052.67,
+        "ticket_moyen_usd": 227.79
+      },
+      {
+        "mois": "2026-05",
+        "nb_operations": 223,
+        "volume_usd": 56308.85,
+        "ticket_moyen_usd": 252.51
+      },
+      {
+        "mois": "2026-06",
+        "nb_operations": 207,
+        "volume_usd": 50989.03,
+        "ticket_moyen_usd": 246.32
+      },
+      {
+        "mois": "2026-07",
+        "nb_operations": 229,
+        "volume_usd": 54970.53,
+        "ticket_moyen_usd": 240.05
+      },
+      {
+        "mois": "2026-08",
+        "nb_operations": 232,
+        "volume_usd": 55313.88,
+        "ticket_moyen_usd": 238.42
+      }
+    ]
+  },
+  {
+    "requete": 2,
+    "colonnes": [
+      "canal",
+      "nb",
+      "volume_usd",
+      "part_pct"
+    ],
+    "nombre_lignes": 4,
+    "apercu": [
+      {
+        "canal": "Agence",
+        "nb": 509,
+        "volume_usd": 131363.31,
+        "part_pct": 26.18
+      },
+      {
+        "canal": "Mobile",
+        "nb": 490,
+        "volume_usd": 124596.64,
+        "part_pct": 25.21
+      },
+      {
+        "canal": "Carte",
+        "nb": 507,
+        "volume_usd": 119348.62,
+        "part_pct": 26.08
+      },
+      {
+        "canal": "Web",
+        "nb": 438,
+        "volume_usd": 88553.55,
+        "part_pct": 22.53
+      }
+    ]
+  },
+  {
+    "requete": 3,
+    "colonnes": [
+      "compte_id",
+      "heure",
+      "nb",
+      "montant_total_usd"
+    ],
+    "nombre_lignes": 1,
+    "apercu": [
+      {
+        "compte_id": 12,
+        "heure": "2026-06-18 10",
+        "nb": 12,
+        "montant_total_usd": 9865.5
+      }
+    ]
+  },
+  {
+    "requete": 4,
+    "colonnes": [
+      "transaction_id",
+      "compte_id",
+      "date_operation",
+      "montant_usd",
+      "moyenne_compte_usd"
+    ],
+    "nombre_lignes": 25,
+    "apercu": [
+      {
+        "transaction_id": 119,
+        "compte_id": 234,
+        "date_operation": "2026-02-17 16:50:40",
+        "montant_usd": 4401.66,
+        "moyenne_compte_usd": 640.91
+      },
+      {
+        "transaction_id": 846,
+        "compte_id": 159,
+        "date_operation": "2026-05-09 03:38:15",
+        "montant_usd": 4051.69,
+        "moyenne_compte_usd": 703.94
+      },
+      {
+        "transaction_id": 301,
+        "compte_id": 125,
+        "date_operation": "2026-03-24 20:41:57",
+        "montant_usd": 3666.84,
+        "moyenne_compte_usd": 582.09
+      },
+      {
+        "transaction_id": 1726,
+        "compte_id": 202,
+        "date_operation": "2026-03-15 05:04:59",
+        "montant_usd": 3561.76,
+        "moyenne_compte_usd": 965.21
+      },
+      {
+        "transaction_id": 305,
+        "compte_id": 219,
+        "date_operation": "2026-08-02 11:59:16",
+        "montant_usd": 3472.18,
+        "moyenne_compte_usd": 989.05
+      },
+      {
+        "transaction_id": 1828,
+        "compte_id": 149,
+        "date_operation": "2026-08-19 00:01:14",
+        "montant_usd": 3011.12,
+        "moyenne_compte_usd": 541.89
+      },
+      {
+        "transaction_id": 445,
+        "compte_id": 91,
+        "date_operation": "2026-05-31 01:00:01",
+        "montant_usd": 2682.94,
+        "moyenne_compte_usd": 543.32
+      },
+      {
+        "transaction_id": 1222,
+        "compte_id": 193,
+        "date_operation": "2026-09-03 23:48:39",
+        "montant_usd": 2401.89,
+        "moyenne_compte_usd": 620.14
+      }
+    ]
+  },
+  {
+    "requete": 5,
+    "colonnes": [
+      "pays",
+      "nb_operations",
+      "volume_usd"
+    ],
+    "nombre_lignes": 3,
+    "apercu": [
+      {
+        "pays": "Zambie",
+        "nb_operations": 110,
+        "volume_usd": 27466.0
+      },
+      {
+        "pays": "Afrique du Sud",
+        "nb_operations": 102,
+        "volume_usd": 20785.06
+      },
+      {
+        "pays": "France",
+        "nb_operations": 97,
+        "volume_usd": 19343.59
+      }
+    ]
+  },
+  {
+    "requete": 6,
+    "colonnes": [
+      "total",
+      "rejetees",
+      "taux_rejet_pct"
+    ],
+    "nombre_lignes": 1,
+    "apercu": [
+      {
+        "total": 2012,
+        "rejetees": 68,
+        "taux_rejet_pct": 3.38
+      }
+    ]
+  }
+]

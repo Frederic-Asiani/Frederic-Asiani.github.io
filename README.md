@@ -1,26 +1,56 @@
-# Frédéric Asiani Mubiala
+# Frédéric (Freddy) ASIANI MUBIALA
 
-**Data Analyst · Business Intelligence · Économiste · Développeur web · Inspecteur du travail**
+**Data Analyst · Business Intelligence · Économiste · Auteur · Inspecteur du travail**  
+Kinshasa, République démocratique du Congo.
 
-Basé à Kinshasa (RDC), je relie l'analyse quantitative, l'économie appliquée, le droit social et l'innovation numérique.
+## Portfolio et réseaux
+
+- Site web GitHub Pages : https://frederic-asiani.github.io/
+- LinkedIn : https://cd.linkedin.com/in/freddy-asiani/en
+- GitHub : https://github.com/Frederic-Asiani
+- Portfolio initial : https://asiani.carrd.co
 
 ## Compétences
-- Data : Excel, SQL, Power BI, Tableau, Python, R
-- Statistiques : économétrie, séries temporelles et prévision
-- Web : HTML, CSS, conception d'interfaces et projets SaaS
-- Domaines : économie congolaise, législation sociale, analyse de l'emploi
 
-## Initiatives
-- **EduPilot** : projet SaaS de gestion scolaire en développement.
-- **Market Group RDC** : services numériques et entrepreneuriat.
-- **Recherche** : travaux sur l'informalité et la diversification économique en RDC.
+SQL, Excel (Power Query), Power BI, Tableau, Python, R, statistique, économétrie, modélisation économique, reporting et développement web.
 
-## Publications
-- *La législation sociale en République Démocratique du Congo : Principes, Applications et Évolution*.
-- *L'essentiel de l'économie congolaise et la prévision en R*.
-- [Contrats de travail et emploi à Kinshasa](https://mpra.ub.uni-muenchen.de/121276/)
-- [Diversification endogène en RDC](https://mpra.ub.uni-muenchen.de/122276/)
+## 3 projets SQL bancaires **réalisés sur données synthétiques**
 
-[**Portfolio**](https://Frederic-Asiani.github.io) · [**GitHub**](https://github.com/Frederic-Asiani) · [**Contact**](mailto:freddyasiani1@gmail.com)
+| Projet | Base | Requêtes exécutées |
+| --- | --- | --- |
+| [Surveillance des transactions](projets/01-surveillance-transactions/) | 2 012 transactions | 6 |
+| [Risque de crédit](projets/02-risque-credit/) | 290 prêts | 6 |
+| [Agences et segmentation](projets/03-agences-clientele/) | 7 agences et 300 clients | 6 |
 
-> Les projets en cours ne sont pas présentés comme des produits certifiés en production.
+Chaque projet fournit un `.sqlite`, des `.csv`, un `schema.sql`, un `analyses.sql`, ses résultats et sa documentation. **Ce sont des cas de portfolio réellement codés et exécutés, pas des missions menées dans des établissements bancaires réels.**
+
+## Publications MPRA (8)
+
+- [2020 — La sensibilité de l’économie congolaise face aux chocs monétaire et budgétaire : une approche en modèle VAR standard](https://mpra.ub.uni-muenchen.de/101255/) — MPRA 101255
+- [2024 — Analyse des conditions et normes de travail en République démocratique du Congo : défis et perspectives d’amélioration](https://mpra.ub.uni-muenchen.de/121254/) — MPRA 121254
+- [2024 — Analyse des contrats de travail et de l’emploi dans la ville de Kinshasa : impact du secteur informel et perspectives d’évolution](https://mpra.ub.uni-muenchen.de/121276/) — MPRA 121276
+- [2024 — L’Inspection Générale du Travail en République démocratique du Congo : enjeux, défis et perspectives de réforme](https://mpra.ub.uni-muenchen.de/121371/) — MPRA 121371
+- [2024 — Théorème de la diversification industrielle en République démocratique du Congo : une analyse théorique et mathématique](https://mpra.ub.uni-muenchen.de/121440/) — MPRA 121440
+- [2024 — Relations professionnelles, syndicalisme et conflits sociaux dans le capitalisme en République démocratique du Congo](https://mpra.ub.uni-muenchen.de/121626/) — MPRA 121626
+- [2024 — Inspection Générale du Travail en République démocratique du Congo et le paradoxe du chat de Schrödinger : une analyse de la dualité dans l’application des normes du travail](https://mpra.ub.uni-muenchen.de/122269/) — MPRA 122269
+- [2024 — Théorie de la diversification endogène en République démocratique du Congo](https://mpra.ub.uni-muenchen.de/122276/) — MPRA 122276
+
+## Ouvrages
+
+- *L’essentiel de l’économie congolaise et la prévision en R* (2020), ISBN 9786202537438.
+- *La législation sociale en République démocratique du Congo : Principes, Applications et Évolution* (2024) et cinq traductions (anglais, allemand, portugais, espagnol, italien) — six éditions linguistiques vérifiées.
+
+## Instructions de mise en ligne
+
+Consulter `DEPLOIEMENT_GITHUB.md`.
+
+## Notes
+
+Les SQL ont été testés sur SQLite 3.46. Les indicateurs de risque (NPL, pertes attendues, etc.) sont des simplifications pédagogiques sur données fictives. Les citations bibliographiques et les liens d'édition sont consultables dans `docs/SOURCES.md`.
+
+
+## Mise à jour portfolio responsive
+- Navigation mobile hamburger accessible (ARIA, Échap, fermeture au clic).
+- Upwork, 2 projets Tableau, recherche du profil Tableau (URL auteur non confirmée).
+- Zando Consulting, Zando Digital et formation Data / droit du travail.
+- 4e projet SQL : gestion des stocks et des ventes, 650 ventes fictives, 6 requêtes SQL testées.
