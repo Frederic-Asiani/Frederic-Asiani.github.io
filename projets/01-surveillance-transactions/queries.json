@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Volumétrie et montants mensuels des opérations validées.",
+    "sql": "-- 1. Volumétrie et montants mensuels des opérations validées.\nSELECT substr(date_operation,1,7) AS mois, COUNT(*) AS nb_operations,\n ROUND(SUM(montant_usd),2) AS volume_usd, ROUND(AVG(montant_usd),2) AS ticket_moyen_usd\nFROM transactions WHERE statut='VALIDE' GROUP BY substr(date_operation,1,7) ORDER BY mois;",
+    "row_count": 9
+  },
+  {
+    "id": "2",
+    "name": "Répartition des volumes par canal (toutes les opérations valides).",
+    "sql": "-- 2. Répartition des volumes par canal (toutes les opérations valides).\nSELECT canal, COUNT(*) AS nb, ROUND(SUM(montant_usd),2) AS volume_usd,\n ROUND(100.0*COUNT(*)/SUM(COUNT(*)) OVER (),2) AS part_pct\nFROM transactions WHERE statut='VALIDE' GROUP BY canal ORDER BY volume_usd DESC;",
+    "row_count": 4
+  },
+  {
+    "id": "3",
+    "name": "Vélocité inhabituelle : quatre opérations SORTANTES dans une heure.",
+    "sql": "-- 3. Vélocité inhabituelle : quatre opérations SORTANTES dans une heure.\nSELECT compte_id, substr(date_operation,1,13) AS heure,\n COUNT(*) AS nb, ROUND(SUM(montant_usd),2) AS montant_total_usd\nFROM transactions WHERE sens='SORTANT' AND statut='VALIDE'\nGROUP BY compte_id,substr(date_operation,1,13) HAVING COUNT(*)>=4\nORDER BY nb DESC,montant_total_usd DESC;",
+    "row_count": 1
+  },
+  {
+    "id": "4",
+    "name": "Opérations atypiques par rapport à la moyenne du compte (3x, plancher 500 USD).",
+    "sql": "-- 4. Opérations atypiques par rapport à la moyenne du compte (3x, plancher 500 USD).\nWITH normales AS (\n SELECT transaction_id,compte_id,date_operation,montant_usd,\n AVG(montant_usd) OVER (PARTITION BY compte_id) AS moyenne_compte\n FROM transactions WHERE statut='VALIDE')\nSELECT transaction_id,compte_id,date_operation,montant_usd,\n ROUND(moyenne_compte,2) AS moyenne_compte_usd\nFROM normales WHERE montant_usd>=500 AND montant_usd>3*moyenne_compte\nORDER BY montant_usd DESC LIMIT 25;",
+    "row_count": 25
+  },
+  {
+    "id": "5",
+    "name": "Opérations transfrontalières et indicateurs de vigilance, sans jugement de fraude.",
+    "sql": "-- 5. Opérations transfrontalières et indicateurs de vigilance, sans jugement de fraude.\nSELECT pays, COUNT(*) AS nb_operations,\n ROUND(SUM(montant_usd),2) AS volume_usd\nFROM transactions WHERE statut='VALIDE' AND pays<>'RDC'\nGROUP BY pays ORDER BY volume_usd DESC;",
+    "row_count": 3
+  },
+  {
+    "id": "6",
+    "name": "Contrôle qualité : taux de transactions rejetées.",
+    "sql": "-- 6. Contrôle qualité : taux de transactions rejetées.\nSELECT COUNT(*) AS total, SUM(CASE WHEN statut='REJETE' THEN 1 ELSE 0 END) AS rejetees,\n ROUND(100.0*SUM(CASE WHEN statut='REJETE' THEN 1 ELSE 0 END)/COUNT(*),2) AS taux_rejet_pct\nFROM transactions;",
+    "row_count": 1
+  }
+]

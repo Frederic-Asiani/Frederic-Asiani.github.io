@@ -54,3 +54,23 @@ Les SQL ont été testés sur SQLite 3.46. Les indicateurs de risque (NPL, perte
 - Upwork, 2 projets Tableau, recherche du profil Tableau (URL auteur non confirmée).
 - Zando Consulting, Zando Digital et formation Data / droit du travail.
 - 4e projet SQL : gestion des stocks et des ventes, 650 ventes fictives, 6 requêtes SQL testées.
+
+
+## Ateliers SQL interactifs dans le portfolio
+
+Quatre projets SQL s'exécutent **entièrement dans le navigateur**, à partir de fichiers SQLite fictifs.
+Ouvrir le portfolio sur GitHub Pages, puis choisir **Exécuter le projet SQL**. Dans la page du projet :
+1. Sélectionner l’une des six analyses proposées.
+2. Cliquer sur **Exécuter SQL** et consulter les lignes, indicateurs et graphique généré.
+3. Modifier la requête en lecture seule (SELECT / WITH), puis relancer.
+4. Exporter le résultat en CSV.
+
+**Moteur :** sql.js 1.13.0 (WebAssembly, chargé sur cdnjs, licence MIT) ; chaque fichier `.sqlite` est chargé dans la mémoire du navigateur. Aucune base côté serveur, aucun identifiant nécessaire et aucune modification persistante. En l'absence du moteur, le site affiche les résultats pré-calculés et signale explicitement le mode aperçu. La première utilisation nécessite un accès à cdnjs.
+
+Pour tester localement, lancer un serveur HTTP dans le dossier racine :
+
+```bash
+python -m http.server 8000
+```
+
+Puis ouvrir `http://localhost:8000` (ne pas ouvrir les fichiers HTML via `file://`).

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Soldes et revenu de commissions par agence, mois de référence: septembre 2026.",
+    "sql": "-- 1. Soldes et revenu de commissions par agence, mois de référence: septembre 2026.\nSELECT a.nom AS agence,COUNT(DISTINCT c.client_id) AS clients,\n ROUND(SUM(s.solde_usd),2) AS depots_usd, ROUND(SUM(s.revenu_commissions_usd),2) AS commissions_usd\nFROM soldes_mensuels s JOIN comptes co ON s.compte_id=co.compte_id\nJOIN clients c ON co.client_id=c.client_id JOIN agences a ON c.agence_id=a.agence_id\nWHERE s.mois='2026-09' GROUP BY a.agence_id ORDER BY depots_usd DESC;",
+    "row_count": 7
+  },
+  {
+    "id": "2",
+    "name": "Profitabilité opérationnelle proxy (commissions moins charges seulement).",
+    "sql": "-- 2. Profitabilité opérationnelle proxy (commissions moins charges seulement).\nWITH revenus AS (\n SELECT c.agence_id,s.mois,SUM(s.revenu_commissions_usd) AS commissions\n FROM soldes_mensuels s JOIN comptes co ON s.compte_id=co.compte_id\n JOIN clients c ON co.client_id=c.client_id GROUP BY c.agence_id,s.mois)\nSELECT a.nom AS agence,ROUND(SUM(r.commissions),2) AS commissions_usd,\n ROUND(SUM(k.charges_usd),2) AS charges_usd,\n ROUND(SUM(r.commissions-k.charges_usd),2) AS contribution_commissions_usd\nFROM revenus r JOIN couts_agences k ON r.agence_id=k.agence_id AND r.mois=k.mois\nJOIN agences a ON a.agence_id=r.agence_id GROUP BY a.agence_id ORDER BY contribution_commissions_usd DESC;",
+    "row_count": 7
+  },
+  {
+    "id": "3",
+    "name": "Dynamique mensuelle des dépôts, de janvier à septembre 2026.",
+    "sql": "-- 3. Dynamique mensuelle des dépôts, de janvier à septembre 2026.\nWITH mensuels AS (\n SELECT mois,SUM(solde_usd) AS depots FROM soldes_mensuels GROUP BY mois)\nSELECT mois,ROUND(depots,2) AS depots_usd,\n ROUND(depots-LAG(depots) OVER (ORDER BY mois),2) AS variation_usd,\n ROUND(100.0*(depots/LAG(depots) OVER (ORDER BY mois)-1),2) AS croissance_pct\nFROM mensuels ORDER BY mois;",
+    "row_count": 9
+  },
+  {
+    "id": "4",
+    "name": "Segmentation selon l'activité dans les 90 derniers jours (proxy).",
+    "sql": "-- 4. Segmentation selon l'activité dans les 90 derniers jours (proxy).\nWITH dernieres AS (\n SELECT c.client_id,c.segment,COUNT(a.activite_id) AS activites_90j,\n COALESCE(SUM(a.montant_usd),0) AS flux_90j\n FROM clients c LEFT JOIN activites_clients a ON a.client_id=c.client_id\n AND a.date_operation>='2026-07-01' AND a.date_operation<='2026-09-30'\n GROUP BY c.client_id)\nSELECT CASE WHEN activites_90j=0 THEN 'Inactif 90 jours'\n WHEN activites_90j>=7 AND flux_90j>=2000 THEN 'Engage valeur elevee'\n ELSE 'Actif' END AS segment_activite,\n COUNT(*) AS nb_clients,ROUND(SUM(flux_90j),2) AS flux_90j_usd\nFROM dernieres GROUP BY 1 ORDER BY nb_clients DESC;",
+    "row_count": 3
+  },
+  {
+    "id": "5",
+    "name": "Acquisition: nombre de nouveaux clients par trimestre.",
+    "sql": "-- 5. Acquisition: nombre de nouveaux clients par trimestre.\nSELECT substr(date_acquisition,1,4)||'-T'||CAST((CAST(substr(date_acquisition,6,2) AS INTEGER)+2)/3 AS INTEGER) AS trimestre,\n COUNT(*) AS clients_acquis FROM clients GROUP BY 1 ORDER BY 1;",
+    "row_count": 19
+  },
+  {
+    "id": "6",
+    "name": "Concentration des dépôts: part des dix plus gros clients en septembre.",
+    "sql": "-- 6. Concentration des dépôts: part des dix plus gros clients en septembre.\nWITH par_client AS (\n SELECT co.client_id,SUM(s.solde_usd) AS depots\n FROM soldes_mensuels s JOIN comptes co ON co.compte_id=s.compte_id\n WHERE s.mois='2026-09' GROUP BY co.client_id),\n top10 AS (SELECT depots FROM par_client ORDER BY depots DESC LIMIT 10)\nSELECT ROUND((SELECT SUM(depots) FROM top10),2) AS top10_usd,\n ROUND((SELECT SUM(depots) FROM par_client),2) AS depots_total_usd,\n ROUND(100.0*(SELECT SUM(depots) FROM top10)/(SELECT SUM(depots) FROM par_client),2) AS concentration_pct;",
+    "row_count": 1
+  }
+]

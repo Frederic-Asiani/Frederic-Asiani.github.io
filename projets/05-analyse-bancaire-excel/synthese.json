@@ -1,0 +1,489 @@
+{
+  "source": "Synthèse agrégée issue du classeur banque.xlsx fourni par l’auteur; données individuelles exclues.",
+  "note": "Identité des personnes et caractère fictif/réel des données non vérifiés; aucune donnée personnelle publiée.",
+  "clients": 500,
+  "comptes": 500,
+  "transactions": 500,
+  "agences": [
+    {
+      "agence": "Agence B",
+      "comptes": 26,
+      "solde": 274417.0,
+      "transactions": 26,
+      "volume": 66476.0
+    },
+    {
+      "agence": "Agence C",
+      "comptes": 36,
+      "solde": 361918.0,
+      "transactions": 36,
+      "volume": 104422.0
+    },
+    {
+      "agence": "Agence D",
+      "comptes": 17,
+      "solde": 164590.0,
+      "transactions": 17,
+      "volume": 35801.0
+    },
+    {
+      "agence": "Agence E",
+      "comptes": 27,
+      "solde": 252108.0,
+      "transactions": 27,
+      "volume": 69191.0
+    },
+    {
+      "agence": "Agence F",
+      "comptes": 28,
+      "solde": 321819.0,
+      "transactions": 28,
+      "volume": 77553.0
+    },
+    {
+      "agence": "Agence G",
+      "comptes": 21,
+      "solde": 206792.0,
+      "transactions": 21,
+      "volume": 59525.0
+    },
+    {
+      "agence": "Agence H",
+      "comptes": 23,
+      "solde": 219989.0,
+      "transactions": 23,
+      "volume": 48551.0
+    },
+    {
+      "agence": "Agence I",
+      "comptes": 25,
+      "solde": 240310.0,
+      "transactions": 25,
+      "volume": 66354.0
+    },
+    {
+      "agence": "Agence J",
+      "comptes": 28,
+      "solde": 254647.0,
+      "transactions": 28,
+      "volume": 62934.0
+    },
+    {
+      "agence": "Agence K",
+      "comptes": 30,
+      "solde": 373228.0,
+      "transactions": 30,
+      "volume": 85756.0
+    },
+    {
+      "agence": "Agence L",
+      "comptes": 16,
+      "solde": 158582.0,
+      "transactions": 16,
+      "volume": 38973.0
+    },
+    {
+      "agence": "Agence M",
+      "comptes": 22,
+      "solde": 258097.0,
+      "transactions": 22,
+      "volume": 61597.0
+    },
+    {
+      "agence": "Agence N",
+      "comptes": 24,
+      "solde": 271823.0,
+      "transactions": 24,
+      "volume": 65891.0
+    },
+    {
+      "agence": "Agence O",
+      "comptes": 27,
+      "solde": 263638.0,
+      "transactions": 27,
+      "volume": 75087.0
+    },
+    {
+      "agence": "Agence P",
+      "comptes": 25,
+      "solde": 291053.0,
+      "transactions": 25,
+      "volume": 65722.0
+    },
+    {
+      "agence": "Agence Q",
+      "comptes": 25,
+      "solde": 192373.0,
+      "transactions": 25,
+      "volume": 62770.0
+    },
+    {
+      "agence": "Agence R",
+      "comptes": 24,
+      "solde": 228679.0,
+      "transactions": 24,
+      "volume": 63125.0
+    },
+    {
+      "agence": "Agence S",
+      "comptes": 29,
+      "solde": 318757.0,
+      "transactions": 29,
+      "volume": 66791.0
+    },
+    {
+      "agence": "Agence T",
+      "comptes": 23,
+      "solde": 275011.0,
+      "transactions": 23,
+      "volume": 42771.0
+    },
+    {
+      "agence": "Agence U",
+      "comptes": 24,
+      "solde": 252893.0,
+      "transactions": 24,
+      "volume": 70963.0
+    }
+  ],
+  "solde_total": 5180724.0,
+  "volume_transactions": 1290253.0,
+  "statuts_clients": [
+    {
+      "statut": "Actif",
+      "nombre": 262
+    },
+    {
+      "statut": "Inactif",
+      "nombre": 238
+    }
+  ],
+  "types_comptes": [
+    {
+      "type": "Courant",
+      "nombre": 163
+    },
+    {
+      "type": "Crédit",
+      "nombre": 163
+    },
+    {
+      "type": "Épargne",
+      "nombre": 174
+    }
+  ],
+  "types_transactions": [
+    {
+      "type": "Dépôt",
+      "nombre": 261,
+      "montant": 664771.0
+    },
+    {
+      "type": "Retrait",
+      "nombre": 239,
+      "montant": 625482.0
+    }
+  ],
+  "evolution_mensuelle": [
+    {
+      "mois": "2020-04",
+      "transactions": 2,
+      "volume": 782.0
+    },
+    {
+      "mois": "2020-05",
+      "transactions": 8,
+      "volume": 21620.0
+    },
+    {
+      "mois": "2020-06",
+      "transactions": 19,
+      "volume": 55513.0
+    },
+    {
+      "mois": "2020-07",
+      "transactions": 10,
+      "volume": 25670.0
+    },
+    {
+      "mois": "2020-08",
+      "transactions": 11,
+      "volume": 27347.0
+    },
+    {
+      "mois": "2020-09",
+      "transactions": 8,
+      "volume": 13410.0
+    },
+    {
+      "mois": "2020-10",
+      "transactions": 7,
+      "volume": 13800.0
+    },
+    {
+      "mois": "2020-11",
+      "transactions": 8,
+      "volume": 18872.0
+    },
+    {
+      "mois": "2020-12",
+      "transactions": 9,
+      "volume": 15465.0
+    },
+    {
+      "mois": "2021-01",
+      "transactions": 7,
+      "volume": 20544.0
+    },
+    {
+      "mois": "2021-02",
+      "transactions": 9,
+      "volume": 24700.0
+    },
+    {
+      "mois": "2021-03",
+      "transactions": 7,
+      "volume": 20691.0
+    },
+    {
+      "mois": "2021-04",
+      "transactions": 4,
+      "volume": 12912.0
+    },
+    {
+      "mois": "2021-05",
+      "transactions": 14,
+      "volume": 30149.0
+    },
+    {
+      "mois": "2021-06",
+      "transactions": 1,
+      "volume": 653.0
+    },
+    {
+      "mois": "2021-07",
+      "transactions": 8,
+      "volume": 18697.0
+    },
+    {
+      "mois": "2021-08",
+      "transactions": 8,
+      "volume": 19714.0
+    },
+    {
+      "mois": "2021-09",
+      "transactions": 10,
+      "volume": 28955.0
+    },
+    {
+      "mois": "2021-10",
+      "transactions": 8,
+      "volume": 23484.0
+    },
+    {
+      "mois": "2021-11",
+      "transactions": 5,
+      "volume": 12909.0
+    },
+    {
+      "mois": "2021-12",
+      "transactions": 12,
+      "volume": 34005.0
+    },
+    {
+      "mois": "2022-01",
+      "transactions": 11,
+      "volume": 37932.0
+    },
+    {
+      "mois": "2022-02",
+      "transactions": 8,
+      "volume": 16009.0
+    },
+    {
+      "mois": "2022-03",
+      "transactions": 15,
+      "volume": 41787.0
+    },
+    {
+      "mois": "2022-04",
+      "transactions": 10,
+      "volume": 34392.0
+    },
+    {
+      "mois": "2022-05",
+      "transactions": 7,
+      "volume": 8777.0
+    },
+    {
+      "mois": "2022-06",
+      "transactions": 11,
+      "volume": 21184.0
+    },
+    {
+      "mois": "2022-07",
+      "transactions": 8,
+      "volume": 19375.0
+    },
+    {
+      "mois": "2022-08",
+      "transactions": 5,
+      "volume": 11996.0
+    },
+    {
+      "mois": "2022-09",
+      "transactions": 6,
+      "volume": 17243.0
+    },
+    {
+      "mois": "2022-10",
+      "transactions": 8,
+      "volume": 17806.0
+    },
+    {
+      "mois": "2022-11",
+      "transactions": 9,
+      "volume": 25020.0
+    },
+    {
+      "mois": "2022-12",
+      "transactions": 10,
+      "volume": 17372.0
+    },
+    {
+      "mois": "2023-01",
+      "transactions": 7,
+      "volume": 16119.0
+    },
+    {
+      "mois": "2023-02",
+      "transactions": 8,
+      "volume": 18829.0
+    },
+    {
+      "mois": "2023-03",
+      "transactions": 9,
+      "volume": 27196.0
+    },
+    {
+      "mois": "2023-04",
+      "transactions": 8,
+      "volume": 26487.0
+    },
+    {
+      "mois": "2023-05",
+      "transactions": 11,
+      "volume": 25580.0
+    },
+    {
+      "mois": "2023-06",
+      "transactions": 6,
+      "volume": 18977.0
+    },
+    {
+      "mois": "2023-07",
+      "transactions": 14,
+      "volume": 38546.0
+    },
+    {
+      "mois": "2023-08",
+      "transactions": 8,
+      "volume": 18749.0
+    },
+    {
+      "mois": "2023-09",
+      "transactions": 6,
+      "volume": 16772.0
+    },
+    {
+      "mois": "2023-10",
+      "transactions": 5,
+      "volume": 8367.0
+    },
+    {
+      "mois": "2023-11",
+      "transactions": 4,
+      "volume": 4989.0
+    },
+    {
+      "mois": "2023-12",
+      "transactions": 6,
+      "volume": 16168.0
+    },
+    {
+      "mois": "2024-01",
+      "transactions": 7,
+      "volume": 20048.0
+    },
+    {
+      "mois": "2024-02",
+      "transactions": 6,
+      "volume": 24631.0
+    },
+    {
+      "mois": "2024-03",
+      "transactions": 7,
+      "volume": 21443.0
+    },
+    {
+      "mois": "2024-04",
+      "transactions": 9,
+      "volume": 20092.0
+    },
+    {
+      "mois": "2024-05",
+      "transactions": 10,
+      "volume": 26721.0
+    },
+    {
+      "mois": "2024-06",
+      "transactions": 8,
+      "volume": 26176.0
+    },
+    {
+      "mois": "2024-07",
+      "transactions": 1,
+      "volume": 3478.0
+    },
+    {
+      "mois": "2024-08",
+      "transactions": 12,
+      "volume": 33420.0
+    },
+    {
+      "mois": "2024-09",
+      "transactions": 12,
+      "volume": 26771.0
+    },
+    {
+      "mois": "2024-10",
+      "transactions": 9,
+      "volume": 24960.0
+    },
+    {
+      "mois": "2024-11",
+      "transactions": 6,
+      "volume": 17287.0
+    },
+    {
+      "mois": "2024-12",
+      "transactions": 17,
+      "volume": 51111.0
+    },
+    {
+      "mois": "2025-01",
+      "transactions": 4,
+      "volume": 7508.0
+    },
+    {
+      "mois": "2025-02",
+      "transactions": 11,
+      "volume": 29087.0
+    },
+    {
+      "mois": "2025-03",
+      "transactions": 6,
+      "volume": 11956.0
+    }
+  ]
+}
