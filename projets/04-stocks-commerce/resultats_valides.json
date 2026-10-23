@@ -1,0 +1,448 @@
+{
+  "01_ventes_par_mois": {
+    "colonnes": [
+      "mois",
+      "chiffre_affaires",
+      "marge_brute"
+    ],
+    "lignes": [
+      [
+        "2026-01",
+        3163.78,
+        1093.98
+      ],
+      [
+        "2026-02",
+        2509.92,
+        879.02
+      ],
+      [
+        "2026-03",
+        2956.54,
+        1003.14
+      ],
+      [
+        "2026-04",
+        2670.33,
+        1006.13
+      ],
+      [
+        "2026-05",
+        2499.33,
+        901.93
+      ],
+      [
+        "2026-06",
+        2003.97,
+        762.27
+      ],
+      [
+        "2026-07",
+        2776.99,
+        988.79
+      ],
+      [
+        "2026-08",
+        2328.05,
+        816.15
+      ],
+      [
+        "2026-09",
+        2516.2,
+        876.4
+      ]
+    ]
+  },
+  "02_top_produits": {
+    "colonnes": [
+      "nom",
+      "unites_vendues",
+      "chiffre_affaires"
+    ],
+    "lignes": [
+      [
+        "Riz 25 kg",
+        174,
+        4356.3
+      ],
+      [
+        "Farine 25 kg",
+        162,
+        3769.2
+      ],
+      [
+        "Batterie externe",
+        213,
+        3108.75
+      ],
+      [
+        "Sucre 10 kg",
+        177,
+        3066.3
+      ],
+      [
+        "Huile 5 L",
+        131,
+        1881.75
+      ],
+      [
+        "Lait en poudre",
+        188,
+        1789.5
+      ],
+      [
+        "Clavier",
+        119,
+        1484.6
+      ],
+      [
+        "Shampoing",
+        226,
+        1298.7
+      ],
+      [
+        "Lessive",
+        143,
+        974.05
+      ],
+      [
+        "Chargeur",
+        154,
+        884.7
+      ]
+    ]
+  },
+  "03_stock_par_magasin": {
+    "colonnes": [
+      "magasin",
+      "produit",
+      "stock_actuel",
+      "seuil",
+      "statut"
+    ],
+    "lignes": [
+      [
+        "Gombe",
+        "Shampoing",
+        84,
+        25,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Batterie externe",
+        98,
+        12,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Farine 25 kg",
+        104,
+        15,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Savon",
+        127,
+        50,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Riz 25 kg",
+        162,
+        15,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Chargeur",
+        168,
+        20,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Câble USB",
+        181,
+        30,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Sucre 10 kg",
+        184,
+        20,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Huile 5 L",
+        217,
+        20,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Clavier",
+        217,
+        10,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Lait en poudre",
+        226,
+        20,
+        "OK"
+      ],
+      [
+        "Gombe",
+        "Lessive",
+        230,
+        22,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Clavier",
+        111,
+        10,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Shampoing",
+        111,
+        25,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Huile 5 L",
+        122,
+        20,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Farine 25 kg",
+        164,
+        15,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Chargeur",
+        166,
+        20,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Batterie externe",
+        170,
+        12,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Câble USB",
+        170,
+        30,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Lessive",
+        171,
+        22,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Lait en poudre",
+        172,
+        20,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Riz 25 kg",
+        187,
+        15,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Savon",
+        187,
+        50,
+        "OK"
+      ],
+      [
+        "Limete",
+        "Sucre 10 kg",
+        190,
+        20,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Lessive",
+        103,
+        22,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Lait en poudre",
+        116,
+        20,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Clavier",
+        133,
+        10,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Savon",
+        162,
+        50,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Batterie externe",
+        192,
+        12,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Sucre 10 kg",
+        200,
+        20,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Câble USB",
+        201,
+        30,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Riz 25 kg",
+        204,
+        15,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Shampoing",
+        215,
+        25,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Chargeur",
+        220,
+        20,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Farine 25 kg",
+        231,
+        15,
+        "OK"
+      ],
+      [
+        "N’djili",
+        "Huile 5 L",
+        239,
+        20,
+        "OK"
+      ]
+    ]
+  },
+  "04_performance_magasin": {
+    "colonnes": [
+      "magasin",
+      "lignes_de_vente",
+      "articles_vendus",
+      "chiffre_affaires"
+    ],
+    "lignes": [
+      [
+        "Gombe",
+        218,
+        687,
+        8776.55
+      ],
+      [
+        "Limete",
+        240,
+        722,
+        7746.74
+      ],
+      [
+        "N’djili",
+        192,
+        588,
+        6901.82
+      ]
+    ]
+  },
+  "05_marge_categorie": {
+    "colonnes": [
+      "categorie",
+      "revenus",
+      "marge_brute",
+      "taux_marge_pct"
+    ],
+    "lignes": [
+      [
+        "Alimentaire",
+        14863.05,
+        4403.05,
+        29.62
+      ],
+      [
+        "Électronique",
+        5954.75,
+        2743.85,
+        46.08
+      ],
+      [
+        "Hygiène",
+        2607.31,
+        1180.91,
+        45.29
+      ]
+    ]
+  },
+  "06_controle_integrite": {
+    "colonnes": [
+      "ventes",
+      "sorties",
+      "anomalies"
+    ],
+    "lignes": [
+      [
+        650,
+        650,
+        0
+      ]
+    ]
+  }
+}
