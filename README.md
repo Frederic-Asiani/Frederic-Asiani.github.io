@@ -1,31 +1,20 @@
-# Frédéric Asiani Mubiala — Portfolio institutionnel
+# Frédéric Asiani Mubiala — Portfolio Premium V10
 
-Portfolio professionnel statique compatible GitHub Pages. Refonte éditoriale sur mesure, avec thèmes clair et sombre, navigation responsive, pages bilingues et démonstrations SQL pédagogiques.
+Portfolio de consultant Data Analytics et économie appliquée, bilingue et à double thème.
 
-## Architecture
+**Ce dépôt GitHub Pages est statique** : les bases de démonstration SQLite s'exécutent dans le navigateur via sql.js/WebAssembly ; les données sont fictives. Le chargement du CDN doit être vérifié sur le site public.
 
-- `index.html` : accueil français, expertises, études de cas, parcours, publications, conseil et contact.
-- `en/index.html` : présentation synthétique en anglais.
-- `styles.css` : design system partagé, composants, media queries et deux thèmes via `[data-theme]`.
-- `main.js` : gestion des thèmes, navigation mobile et recherche parmi les articles.
-- `projets/01..04/` : quatre laboratoires SQL, jeux de données fictifs, scripts et résultats.
-- `sql-lab.js` : moteur SQLite dans le navigateur via sql.js WebAssembly ; aperçu pré-calculé de secours.
-- `projets/05-analyse-bancaire-excel/` : étude bancaire agrégée/anonymisée ; aucun nom, contact ou compte individuel diffusé.
-- `projets/06-powerbi/` : intégration du rapport Power BI public.
-- `docs/SOURCES.md` : sources de référence.
-- `RAPPORT_AUDIT_ET_TESTS.md` : vérifications et limites.
+## Sections
+- Accueil et expertises
+- Quatre études SQL interactives
+- Projets Power BI, Tableau, Excel bancaire
+- Parcours institutionnel, articles MPRA et ouvrages
+- Conseil, formation et contact WhatsApp
 
-## Publications et activités
+## Documentation
+- `LIRE_MOI_V10.md` : changements et provenance du portrait
+- `COMPARATIF_ET_DECISIONS_V10.md` : comparaison qualitative avec dix références
+- `RAPPORT_VALIDATION_V10.md` : tests reproductibles et limites
+- `DEPLOIEMENT_GITHUB.md` : publication sur ton workflow GitHub Pages
 
-- Huit références MPRA, deux ouvrages distincts dont un en six éditions linguistiques.
-- Tableau Public : https://public.tableau.com/app/profile/frederic.asiani
-- Upwork : https://www.upwork.com/freelancers/~019a6d23b828207a48
-- Zando Consulting : https://consulting.marketgroup.pro
-- Zando Digital : https://digital.marketgroup.pro
-- WhatsApp formations : https://wa.me/243820249705
-
-**Transparence :** les projets SQL et leurs performances sont des simulations pédagogiques. Les services privés sont distincts du poste public d’inspecteur du travail.
-
-## Publication
-
-Voir `DEPLOIEMENT_GITHUB.md`. La production existante utilise un workflow GitHub Actions qui extrait une archive `portfolio-v7.zip` depuis `main` pour publier sur `gh-pages` : ne pas pousser seulement les HTML sur `main` sans mettre à jour cette archive.
+Le portrait est un recadrage d'une photographie authentique visible sur une capture fournie par le titulaire.

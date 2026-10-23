@@ -145,3 +145,103 @@ html[data-theme="dark"]{color-scheme:dark;--bg:#0d1923;--surface:#142530;--surfa
 }
 @media(max-width:360px){.evidence-feature{padding:15px 12px}.evidence-feature-chart{gap:3px}.hero-portrait{max-width:210px}.wordmark-name{font-size:.59rem}}
 @media(prefers-reduced-motion:reduce){.evidence-feature *{transition:none!important}}
+
+
+/* V10 — Refinement for international editorial portfolio. Scoped overrides, no new framework. */
+:root{font-synthesis:none}
+html{overflow-x:clip}
+body{overflow-x:clip;-webkit-text-size-adjust:100%}
+button,a{-webkit-tap-highlight-color:transparent}
+.site-nav a,.work-links a,.case-foot a,.editorial-link{text-decoration-thickness:1px;text-underline-offset:4px}
+.site-nav a:hover,.work-links a:hover,.case-foot a:hover,.editorial-link:hover{text-decoration:underline}
+.site-header{backdrop-filter:saturate(110%)}
+.hero-copy,.hero-portrait,.case-content,.case-stat{min-width:0}
+.case-index{white-space:nowrap;display:inline-flex;align-items:baseline;gap:.2rem;font-variant-numeric:tabular-nums}
+.case-index span{white-space:nowrap;display:inline!important;line-height:1}
+.case-content>p:not(.eyebrow){max-width:53ch}
+.evidence-feature-chart,.evidence-month,.evidence-column-track{min-width:0}
+.evidence-column-track{transition:none}
+.work-feature{scroll-margin-top:110px}
+.work-links a{min-height:36px;display:inline-flex;align-items:center}
+.publication-item,.timeline-entry{scroll-margin-top:96px}
+.portrait-inner img{background:var(--surface2)}
+.portrait-caption{line-height:1.55}
+/* More recognisable semantic distinctions for the case studies */
+.case-row:hover .case-content h3{color:var(--accent)}
+@media(hover:none){.case-row:hover .case-content h3{color:inherit}}
+/* Comfortable tablet widths */
+@media(min-width:781px) and (max-width:1050px){
+ .hero{gap:36px;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr)}
+ .case-row{grid-template-columns:64px minmax(0,1fr) 125px;gap:15px}
+ .case-stat strong{font-size:2.05rem}
+}
+/* The portrait becomes a horizontal mini-biography instead of a small photo with empty space on mobile. */
+@media(max-width:780px){
+ .hero{padding-top:48px;padding-bottom:46px;gap:23px}
+ .hero-portrait{display:grid;grid-template-columns:minmax(0,140px) minmax(0,1fr);align-items:center;gap:17px;max-width:none;width:100%;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+ .portrait-inner{aspect-ratio:4/4.75;width:100%}
+ .portrait-inner img{object-fit:cover;object-position:center 25%}
+ .portrait-caption{padding:0;border:0;gap:10px;font-size:.74rem;letter-spacing:.045em}
+ .portrait-caption span+span{font-size:.76rem;line-height:1.4}
+ .credential-inner{min-height:0;padding-block:15px;gap:6px 20px}
+ .section{padding:57px 0}
+ .section-heading{margin-bottom:23px}
+ .section-heading h2{font-size:clamp(1.85rem,5.4vw,2.55rem);line-height:1.18}
+ .section-heading p{font-size:.96rem;line-height:1.65}
+ .expertise-item{padding-top:23px;padding-bottom:24px}
+ .case-row{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:27px 0}
+ .case-index{grid-column:1;display:flex!important;align-items:baseline;gap:4px;font-size:.9rem;line-height:1.2;width:max-content;white-space:nowrap}
+ .case-index span{font-size:.75rem;line-height:1.2}
+ .case-content{grid-column:1}
+ .case-content h3{margin:3px 0 8px}
+ .case-content .eyebrow{margin-bottom:5px}
+ .case-stat{grid-column:1;text-align:left;padding:9px 0 4px 14px;border-left:2px solid var(--accent);display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+ .case-stat strong{font-size:clamp(1.45rem,5vw,2.1rem);line-height:1.05}
+ .case-stat span{max-width:23ch}
+ .case-foot{margin-top:15px;gap:8px;align-items:flex-start}
+ .work-feature{padding-block:25px}
+}
+@media(max-width:520px){
+ .site-header-inner{min-height:65px}
+ .hero{padding-top:41px;padding-bottom:40px;gap:20px}
+ .kicker{font-size:.62rem;line-height:1.5;letter-spacing:.095em;margin-bottom:20px}
+ .hero h1{font-size:clamp(2.25rem,10vw,3.25rem);line-height:1.05;letter-spacing:-.052em;margin-bottom:14px}
+ .hero-specialty{font-size:1.19rem;line-height:1.45;margin-bottom:16px}
+ .hero-intro{font-size:.92rem;line-height:1.68;max-width:42ch}
+ .hero-actions{margin-top:19px;gap:5px}
+ .hero-actions a{min-height:47px}
+ .hero-assurance{margin-top:17px;padding-top:16px;gap:3px 9px;font-size:.68rem}
+ .hero-portrait{grid-template-columns:132px minmax(0,1fr);gap:16px;max-width:none;padding:15px 0}
+ .portrait-inner{aspect-ratio:4/4.8}
+ .portrait-caption{font-size:.67rem;gap:7px}
+ .portrait-caption span+span{font-size:.7rem}
+ .credential-inner{font-size:.62rem;line-height:1.45}
+ .section{padding:49px 0}
+ .section-heading h2{font-size:clamp(1.75rem,7.8vw,2.05rem);line-height:1.16}
+ .section-heading p{font-size:.92rem}
+ .expertise-item h3{font-size:1.42rem}
+ .expertise-item p{font-size:.92rem;line-height:1.55}
+ .case-content h3{font-size:1.51rem}
+ .case-content>p:not(.eyebrow){font-size:.92rem}
+ .case-foot{flex-direction:column;gap:9px}
+ .case-stat span{font-size:.78rem}
+ .evidence-feature{padding:20px 17px}
+ .evidence-feature-header h3{font-size:1.52rem}
+ .evidence-feature-header p{font-size:.89rem}
+ .evidence-feature-chart{gap:7px}
+ .section-number,.eyebrow,.micro-label,.section-label{letter-spacing:.09em}
+ .wordmark-name{letter-spacing:.035em}
+}
+@media(max-width:360px){
+ .site-header-inner{padding-inline:12px}
+ .hero h1{font-size:2.22rem}
+ .hero-portrait{grid-template-columns:112px minmax(0,1fr);gap:13px}
+ .portrait-caption{font-size:.62rem}
+ .portrait-caption span+span{font-size:.64rem}
+ .credential-inner{font-size:.59rem}
+ .case-index{gap:3px}
+ .case-row{gap:9px}
+}
+@media(prefers-reduced-motion:reduce){.case-row:hover .case-content h3{transition:none}}
+/* Remove fallback layer once the locally-hosted authentic portrait has loaded. */
+.hero-portrait.has-photo .portrait-fallback{visibility:hidden;pointer-events:none}

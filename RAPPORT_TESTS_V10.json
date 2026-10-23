@@ -1,0 +1,225 @@
+{
+  "browser": [
+    {
+      "width": 320,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 414,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 414,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": true,
+      "menu": true,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": false,
+      "menu": null,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": false,
+      "menu": null,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "actual": "light",
+      "overflow": 0,
+      "case_index_same_line": false,
+      "menu": null,
+      "portrait": "is-loaded"
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "actual": "dark",
+      "overflow": 0,
+      "case_index_same_line": false,
+      "menu": null,
+      "portrait": "is-loaded"
+    },
+    {
+      "page": "en/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/01-surveillance-transactions/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/02-risque-credit/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/03-agences-clientele/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/04-stocks-commerce/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/05-analyse-bancaire-excel/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/06-powerbi/index.html",
+      "width": 320,
+      "overflow": 0,
+      "theme": "light"
+    }
+  ],
+  "database": [
+    {
+      "project": "01-surveillance-transactions",
+      "integrity": "ok",
+      "queries": 6,
+      "errors": []
+    },
+    {
+      "project": "02-risque-credit",
+      "integrity": "ok",
+      "queries": 6,
+      "errors": []
+    },
+    {
+      "project": "03-agences-clientele",
+      "integrity": "ok",
+      "queries": 6,
+      "errors": []
+    },
+    {
+      "project": "04-stocks-commerce",
+      "integrity": "ok",
+      "queries": 6,
+      "errors": []
+    }
+  ],
+  "files": {
+    "missing_local_links": [],
+    "html_count": 8,
+    "sqlite_count": 4,
+    "pages": [
+      "en/index.html",
+      "index.html",
+      "projets/01-surveillance-transactions/index.html",
+      "projets/02-risque-credit/index.html",
+      "projets/03-agences-clientele/index.html",
+      "projets/04-stocks-commerce/index.html",
+      "projets/05-analyse-bancaire-excel/index.html",
+      "projets/06-powerbi/index.html"
+    ]
+  },
+  "summary": {
+    "mobile_overflow": 0,
+    "bad_index": 4,
+    "db_queries": 24,
+    "errors": 0
+  }
+}
