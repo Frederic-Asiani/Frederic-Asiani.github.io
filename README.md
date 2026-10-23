@@ -1,26 +1,26 @@
-# Portfolio — Frederic Asiani
+# Frédéric Asiani Mubiala
 
-Ce dépôt contient un site portfolio statique présentant mon profil professionnel, mes compétences et mes projets dans les domaines du développement web, de la data et de l’analyse.
+**Data Analyst · Business Intelligence · Économiste · Développeur web · Inspecteur du travail**
 
-Le site sert de vitrine personnelle pour mettre en avant mon parcours, mes réalisations et mon évolution technique.
+Basé à Kinshasa (RDC), je relie l'analyse quantitative, l'économie appliquée, le droit social et l'innovation numérique.
 
-Lien du portfolio en ligne :  
-https://frederic-asiani.github.io
+## Compétences
+- Data : Excel, SQL, Power BI, Tableau, Python, R
+- Statistiques : économétrie, séries temporelles et prévision
+- Web : HTML, CSS, conception d'interfaces et projets SaaS
+- Domaines : économie congolaise, législation sociale, analyse de l'emploi
 
-Fichiers principaux :
-- `index.html` — page principale du portfolio  
-- `styles.css` — styles du site  
-- `.github/workflows/deploy.yml` — workflow de déploiement automatique via GitHub Pages  
+## Initiatives
+- **EduPilot** : projet SaaS de gestion scolaire en développement.
+- **Market Group RDC** : services numériques et entrepreneuriat.
+- **Recherche** : travaux sur l'informalité et la diversification économique en RDC.
 
-Instructions pour consulter le site :
-1. Le site est accessible publiquement via le lien ci-dessus  
-2. Il est hébergé sur GitHub Pages et se met à jour automatiquement lors des modifications du dépôt  
-3. Il est compatible avec ordinateur et mobile sans installation  
+## Publications
+- *La législation sociale en République Démocratique du Congo : Principes, Applications et Évolution*.
+- *L'essentiel de l'économie congolaise et la prévision en R*.
+- [Contrats de travail et emploi à Kinshasa](https://mpra.ub.uni-muenchen.de/121276/)
+- [Diversification endogène en RDC](https://mpra.ub.uni-muenchen.de/122276/)
 
-Objectif du portfolio :
-- Présenter mon profil professionnel de manière claire et moderne  
-- Mettre en avant mes compétences techniques (développement web, data, analyse)  
-- Montrer mes projets et réalisations  
-- Faciliter les opportunités professionnelles et collaborations  
+[**Portfolio**](https://Frederic-Asiani.github.io) · [**GitHub**](https://github.com/Frederic-Asiani) · [**Contact**](mailto:freddyasiani1@gmail.com)
 
-Ce portfolio est régulièrement mis à jour afin de refléter mon évolution et mes nouveaux projets
+> Les projets en cours ne sont pas présentés comme des produits certifiés en production.
