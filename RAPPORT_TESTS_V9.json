@@ -1,0 +1,146 @@
+{
+  "browser_inline": [
+    {
+      "width": 320,
+      "mode": "light",
+      "theme": "light",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "theme": "dark",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 360,
+      "mode": "light",
+      "theme": "light",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 360,
+      "mode": "dark",
+      "theme": "dark",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "theme": "light",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "theme": "dark",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 768,
+      "mode": "light",
+      "theme": "light",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 768,
+      "mode": "dark",
+      "theme": "dark",
+      "overflow": 0,
+      "menu_opened": true,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 1280,
+      "mode": "light",
+      "theme": "light",
+      "overflow": 0,
+      "menu_opened": null,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "width": 1280,
+      "mode": "dark",
+      "theme": "dark",
+      "overflow": 0,
+      "menu_opened": null,
+      "chart_points": 6,
+      "longCopy": 266
+    },
+    {
+      "page": "projets/01-surveillance-transactions/index.html",
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/02-risque-credit/index.html",
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/03-agences-clientele/index.html",
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/04-stocks-commerce/index.html",
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/05-analyse-bancaire-excel/index.html",
+      "overflow": 0,
+      "theme": "light"
+    },
+    {
+      "page": "projets/06-powerbi/index.html",
+      "overflow": 0,
+      "theme": "light"
+    }
+  ],
+  "sql": [
+    {
+      "project": "01-surveillance-transactions",
+      "integrity": true,
+      "queries": 6
+    },
+    {
+      "project": "02-risque-credit",
+      "integrity": true,
+      "queries": 6
+    },
+    {
+      "project": "03-agences-clientele",
+      "integrity": true,
+      "queries": 6
+    },
+    {
+      "project": "04-stocks-commerce",
+      "integrity": true,
+      "queries": 6
+    }
+  ]
+}

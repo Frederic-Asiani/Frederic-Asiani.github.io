@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-23",
+  "page_count": 8,
+  "internal_urls_checked": 169,
+  "external_urls_present": 83,
+  "local_broken_links": [],
+  "duplicate_ids": {},
+  "javascript_syntax": [
+    [
+      "sql-lab.js",
+      0
+    ],
+    [
+      "main.js",
+      0
+    ],
+    [
+      "projets/05-analyse-bancaire-excel/excel-dashboard.js",
+      0
+    ]
+  ],
+  "base_sqlite_queries": 24,
+  "sqlite_databases_integrity_ok": 4,
+  "isolated_inline_browser_test": {
+    "widths": [
+      320,
+      360,
+      390,
+      768,
+      1280
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "horizontal_overflow": false,
+    "mobile_menu_open": true,
+    "project_pages_width320": 6,
+    "external_assets_disabled_for_isolation": true
+  },
+  "sample_contrast_aa": {
+    "light": {
+      "body": 13.54,
+      "muted": 5.82,
+      "accent": 7.21,
+      "button": 7.79
+    },
+    "dark": {
+      "body": 15.99,
+      "muted": 10.5,
+      "accent": 11.53,
+      "button": 10.69
+    }
+  },
+  "limits": [
+    "Test navigateur isolé : absence de chargement réseau de la photographie, des fontes et du CDN SQL WebAssembly.",
+    "Échec de navigation vers file:// ou localhost dû à une restriction du navigateur de test.",
+    "Les WCAG 2.2 AA ne sont pas certifiés par un audit exhaustif.",
+    "Aucun test matériel iPhone ou Android ni performance Lighthouse en production."
+  ],
+  "source_truth": "Tous les KPI de simulation demeurent identifiés comme des données fictives et le nouveau graphique réutilise des résultats SQL archivés."
+}
