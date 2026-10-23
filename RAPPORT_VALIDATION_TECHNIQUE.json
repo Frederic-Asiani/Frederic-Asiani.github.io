@@ -1,0 +1,135 @@
+{
+  "files": [
+    {
+      "page": "en/index.html",
+      "title": "Frédéric Asiani Mubiala | Data Analytics & Applied Economics",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "en"
+    },
+    {
+      "page": "index.html",
+      "title": "Frédéric Asiani Mubiala | Data Analyst, économiste et consultant",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/01-surveillance-transactions/index.html",
+      "title": "Surveillance des transactions bancaires | Étude de cas SQL — Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/02-risque-credit/index.html",
+      "title": "Qualité du portefeuille de crédit | Étude de cas SQL — Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/03-agences-clientele/index.html",
+      "title": "Performance des agences bancaires | Étude de cas SQL — Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/04-stocks-commerce/index.html",
+      "title": "Gestion des stocks et ventes commerciales | Étude de cas SQL — Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/05-analyse-bancaire-excel/index.html",
+      "title": "Étude bancaire sous Excel | Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    },
+    {
+      "page": "projets/06-powerbi/index.html",
+      "title": "Rapport Power BI | Frédéric Asiani",
+      "themeToggle": true,
+      "navMenu": true,
+      "headBootstrap": true,
+      "htmlLang": "fr"
+    }
+  ],
+  "broken_internal": [],
+  "missing_alt": [],
+  "duplicate_ids": [],
+  "other": [],
+  "sql": [
+    {
+      "project": "01-surveillance-transactions",
+      "dbIntegrity": "ok",
+      "queryCount": 6,
+      "executed": 6,
+      "rowCountsOrErrors": [
+        9,
+        4,
+        1,
+        25,
+        3,
+        1
+      ],
+      "tables": 3
+    },
+    {
+      "project": "02-risque-credit",
+      "dbIntegrity": "ok",
+      "queryCount": 6,
+      "executed": 6,
+      "rowCountsOrErrors": [
+        1,
+        5,
+        10,
+        4,
+        1,
+        1
+      ],
+      "tables": 3
+    },
+    {
+      "project": "03-agences-clientele",
+      "dbIntegrity": "ok",
+      "queryCount": 6,
+      "executed": 6,
+      "rowCountsOrErrors": [
+        7,
+        7,
+        9,
+        3,
+        19,
+        1
+      ],
+      "tables": 6
+    },
+    {
+      "project": "04-stocks-commerce",
+      "dbIntegrity": "ok",
+      "queryCount": 6,
+      "executed": 6,
+      "rowCountsOrErrors": [
+        9,
+        10,
+        36,
+        3,
+        3,
+        1
+      ],
+      "tables": 4
+    }
+  ],
+  "sourceExcelPublic": false
+}

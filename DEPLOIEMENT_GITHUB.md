@@ -1,30 +1,33 @@
-# Publication GitHub Pages
+# Mise en ligne sur GitHub Pages — Refonte institutionnelle
 
-1. Télécharger et décompresser le ZIP.
-2. Dans https://github.com/Frederic-Asiani/Frederic-Asiani.github.io, utiliser **Add file → Upload files** et envoyer **les fichiers et sous-dossiers à la racine**, pas le ZIP lui-même.
-3. Conserver la structure `projets/04-stocks-commerce/` et tous ses fichiers pour les téléchargements.
-4. Commit sur `main`. Le workflow GitHub Actions déjà installé republie `main` sur la branche `gh-pages`. Dans Settings → Pages, vérifiez la source réellement utilisée ; conservez celle qui fonctionne déjà.
-5. Vérifier sur https://Frederic-Asiani.github.io le menu mobile, les quatre études de cas et les liens externes.
+**Aucun changement n’a été poussé sur GitHub par cette livraison.** Vérifier la prévisualisation et approuver la mise en ligne avant de publier.
 
-**Ne supprimez pas les fichiers existants sans sauvegarde.**
+## Depuis Chrome sur téléphone (workflow actuel)
 
+Le dépôt `Frederic-Asiani/Frederic-Asiani.github.io` a déjà un workflow `.github/workflows/deploy.yml` qui extrait **`portfolio-v7.zip`** sur `main` et publie les fichiers extraits sur `gh-pages`.
 
-## Déploiement des démonstrations SQL interactives
+1. Télécharger l’archive dédiée **`portfolio-v7.zip`** jointe à cette livraison : elle contient directement `index.html`, `styles.css`, `main.js`, `en/`, `projets/` etc., à sa racine.
+2. Ouvrir https://github.com/Frederic-Asiani/Frederic-Asiani.github.io (branche `main`) dans Chrome et passer au mode « Site pour ordinateur » si nécessaire.
+3. Utiliser `Add file` → `Upload files` et remplacer **le fichier `portfolio-v7.zip` existant** par le nouveau. Si l’interface refuse un remplacement, supprimer d’abord l’ancien fichier puis envoyer le nouveau (deux commits) ; cette suppression temporaire peut générer un workflow échoué sans effet durable.
+4. `Commit changes`. Le workflow « Publier portfolio V7 » extraira la nouvelle archive et déploiera `gh-pages`.
+5. Vérifier https://github.com/Frederic-Asiani/Frederic-Asiani.github.io/actions . Les cases vertes ne suffisent pas : vérifier ensuite le contenu du site public.
+6. Vérifier GitHub `Settings` → `Pages` : `Deploy from a branch` → `gh-pages` → `/(root)`.
+7. Ouvrir en navigation privée `https://frederic-asiani.github.io/?edition=institut-2026` pour contourner le cache. Tester un atelier SQL, les deux thèmes, le menu et les liens.
 
-Copiez **l'intégralité** du contenu de l'archive dans le dépôt GitHub Pages, notamment `sql-lab.js`, `styles.css` et les dossiers `projets/01-*` à `projets/04-*` (bases SQLite, `queries.json`, `resultats_valides.json`).
+**Ne pas sélectionner `main` comme branche Pages avec le workflow ZIP actuel** : elle contient potentiellement une ancienne page `index.html`, car c’est l’archive extraite sur `gh-pages` qui constitue la version finale.
 
-Dans GitHub Desktop : **Repository → Show in Explorer**, collez les fichiers, puis **Commit to main → Push origin**. Vérifiez l'onglet Actions et les 4 liens « Exécuter le projet SQL ».
+## Depuis GitHub Desktop
 
-En ligne, le moteur SQLite en WebAssembly est récupéré depuis `cdnjs.cloudflare.com`. Il n'exige aucun hébergement PHP, Node.js ni serveur de base de données. Si ce CDN est bloqué, les résultats pré-calculés restent consultables mais l'éditeur SQL reste indisponible.
+Cloner le dépôt, remplacer l’archive `portfolio-v7.zip` à sa racine, faire `Commit to main` puis `Push origin`. Éviter de seulement copier les fichiers HTML : le workflow continuera de déployer le contenu de `portfolio-v7.zip` tant qu’il n’est pas remplacé.
 
-**Guide complémentaire :** `GUIDE_SQL_INTERACTIF.md` détaille les tests, le chargement du moteur et les limites du mode hors ligne.
+## Retour arrière
 
-**Guide complémentaire :** `GUIDE_SQL_INTERACTIF.md` détaille les tests, le chargement du moteur et les limites du mode hors ligne.
+Conserver la précédente archive `portfolio-v7.zip` en sauvegarde locale avant remplacement. Pour revenir à une version antérieure, restaurer cette archive dans `main` et faire un commit ; le workflow republiera la version restaurée. Ne pas faire de changement de branche Pages sans comprendre le mode de déploiement.
 
+## Contrôles après publication
 
-## Mise à jour du portfolio Power BI, Excel et WhatsApp
-- Importer **tout le contenu** de cette archive à la racine du dépôt `Frederic-Asiani.github.io` en conservant les sous-dossiers `projets/` et les fichiers `main.js`, `sql-lab.js`, `styles.css`.
-- Effectuer `Commit to main`, puis `Push origin` dans GitHub Desktop.
-- Vérifier l'onglet Actions puis la page publique.
-- Tester le menu ☰ sur téléphone, le laboratoire SQL, le tableau de bord Excel et le bouton WhatsApp.
-- **Ne jamais téléverser le classeur source banque.xlsx** : il contient des données individuelles. Seul `Banque_Synthese_Anonymisee.xlsx` est inclus.
+- Page d’accueil avec typographie éditoriale, thème clair/sombre et bouton lune/soleil.
+- Menu mobile accessible et navigation vers les sections.
+- Pages `projets/01..04` : message `SQLite prêt` avant d’annoncer l’exécution réelle ; sinon mode aperçu.
+- Power BI/Tableau : embeds et liens soumis à leur disponibilité externe.
+- Vérifier depuis un iPhone, Android et ordinateur lorsque disponibles.

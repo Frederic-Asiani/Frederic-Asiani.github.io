@@ -1,0 +1,279 @@
+{
+  "pages": [
+    {
+      "path": "en/index.html",
+      "title": "Frédéric Asiani Mubiala | Data Analytics & Applied Economics",
+      "lang": "en",
+      "local_resources_checked": 15,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "index.html",
+      "title": "Frédéric Asiani Mubiala | Data Analyst, économiste et consultant",
+      "lang": "fr",
+      "local_resources_checked": 19,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/01-surveillance-transactions/index.html",
+      "title": "Surveillance des transactions bancaires | Étude de cas SQL — Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 21,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/02-risque-credit/index.html",
+      "title": "Qualité du portefeuille de crédit | Étude de cas SQL — Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 21,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/03-agences-clientele/index.html",
+      "title": "Performance des agences bancaires | Étude de cas SQL — Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 21,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/04-stocks-commerce/index.html",
+      "title": "Gestion des stocks et ventes commerciales | Étude de cas SQL — Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 21,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/05-analyse-bancaire-excel/index.html",
+      "title": "Étude bancaire sous Excel | Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 14,
+      "theme_button": true,
+      "menu": true
+    },
+    {
+      "path": "projets/06-powerbi/index.html",
+      "title": "Rapport Power BI | Frédéric Asiani",
+      "lang": "fr",
+      "local_resources_checked": 12,
+      "theme_button": true,
+      "menu": true
+    }
+  ],
+  "missing_local_resources": [],
+  "missing_anchors": [],
+  "missing_alt": [],
+  "duplicate_ids": [],
+  "sql": [
+    {
+      "project": "01-surveillance-transactions",
+      "integrity": "ok",
+      "queries": [
+        {
+          "name": "Volumétrie et montants mensuels des opérations validées.",
+          "rows": 9,
+          "success": true
+        },
+        {
+          "name": "Répartition des volumes par canal (toutes les opérations valides).",
+          "rows": 4,
+          "success": true
+        },
+        {
+          "name": "Vélocité inhabituelle : quatre opérations SORTANTES dans une heure.",
+          "rows": 1,
+          "success": true
+        },
+        {
+          "name": "Opérations atypiques par rapport à la moyenne du compte (3x, plancher 500 USD).",
+          "rows": 25,
+          "success": true
+        },
+        {
+          "name": "Opérations transfrontalières et indicateurs de vigilance, sans jugement de fraude.",
+          "rows": 3,
+          "success": true
+        },
+        {
+          "name": "Contrôle qualité : taux de transactions rejetées.",
+          "rows": 1,
+          "success": true
+        }
+      ]
+    },
+    {
+      "project": "02-risque-credit",
+      "integrity": "ok",
+      "queries": [
+        {
+          "name": "Portefeuille et ratio NPL (proxy pédagogique: retard >=90 jours).",
+          "rows": 1,
+          "success": true
+        },
+        {
+          "name": "Distribution des retards.",
+          "rows": 5,
+          "success": true
+        },
+        {
+          "name": "Analyse de cohorte (vintage) selon le trimestre de l'octroi.",
+          "rows": 10,
+          "success": true
+        },
+        {
+          "name": "Exposition au risque par produit.",
+          "rows": 4,
+          "success": true
+        },
+        {
+          "name": "Stress test démonstratif (+30% PD, plafonnée à 100%, LGD inchangée).",
+          "rows": 1,
+          "success": true
+        },
+        {
+          "name": "Qualité des montants : remboursements totaux <= prêts initiaux.",
+          "rows": 1,
+          "success": true
+        }
+      ]
+    },
+    {
+      "project": "03-agences-clientele",
+      "integrity": "ok",
+      "queries": [
+        {
+          "name": "Soldes et revenu de commissions par agence, mois de référence: septembre 2026.",
+          "rows": 7,
+          "success": true
+        },
+        {
+          "name": "Profitabilité opérationnelle proxy (commissions moins charges seulement).",
+          "rows": 7,
+          "success": true
+        },
+        {
+          "name": "Dynamique mensuelle des dépôts, de janvier à septembre 2026.",
+          "rows": 9,
+          "success": true
+        },
+        {
+          "name": "Segmentation selon l'activité dans les 90 derniers jours (proxy).",
+          "rows": 3,
+          "success": true
+        },
+        {
+          "name": "Acquisition: nombre de nouveaux clients par trimestre.",
+          "rows": 19,
+          "success": true
+        },
+        {
+          "name": "Concentration des dépôts: part des dix plus gros clients en septembre.",
+          "rows": 1,
+          "success": true
+        }
+      ]
+    },
+    {
+      "project": "04-stocks-commerce",
+      "integrity": "ok",
+      "queries": [
+        {
+          "name": "ventes_par_mois",
+          "rows": 9,
+          "success": true
+        },
+        {
+          "name": "top_produits",
+          "rows": 10,
+          "success": true
+        },
+        {
+          "name": "stock_par_magasin",
+          "rows": 36,
+          "success": true
+        },
+        {
+          "name": "performance_magasin",
+          "rows": 3,
+          "success": true
+        },
+        {
+          "name": "marge_categorie",
+          "rows": 3,
+          "success": true
+        },
+        {
+          "name": "controle_integrite",
+          "rows": 1,
+          "success": true
+        }
+      ]
+    }
+  ],
+  "js": [
+    {
+      "file": "main.js",
+      "syntax_ok": true,
+      "error": ""
+    },
+    {
+      "file": "projets/05-analyse-bancaire-excel/excel-dashboard.js",
+      "syntax_ok": true,
+      "error": ""
+    },
+    {
+      "file": "sql-lab.js",
+      "syntax_ok": true,
+      "error": ""
+    }
+  ],
+  "checked_at": "2026-10-23",
+  "page_count": 8,
+  "external_deps": [
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://app.powerbi.com/view?r=eyJrIjoiYWExMDlhM2MtM2ZlNi00NTA0LTg5NTYtYmNmMjgyN2I0ZjVjIiwidCI6IjFjOTRjYTlhLThkOTgtNGQxMC05OTQ0LTZmZjU4NGNjODBlNyJ9",
+    "https://public.tableau.com/views/ProjetbritishAirWays/Tableaudebord1",
+    "https://public.tableau.com/views/GlobalTechSolutions_17383775965590/Tableaudebord1",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.min.js",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.min.js",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.min.js",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.min.js",
+    "https://public.tableau.com/app/profile/frederic.asiani",
+    "https://app.powerbi.com/view?r=eyJrIjoiYWExMDlhM2MtM2ZlNi00NTA0LTg5NTYtYmNmMjgyN2I0ZjVjIiwidCI6IjFjOTRjYTlhLThkOTgtNGQxMC05OTQ0LTZmZjU4NGNjODBlNyJ9",
+    "https://app.powerbi.com/view?r=eyJrIjoiYWExMDlhM2MtM2ZlNi00NTA0LTg5NTYtYmNmMjgyN2I0ZjVjIiwidCI6IjFjOTRjYTlhLThkOTgtNGQxMC05OTQ0LTZmZjU4NGNjODBlNyJ9",
+    "https://public.tableau.com/app/profile/frederic.asiani"
+  ],
+  "css_brackets": {
+    "opening": 379,
+    "closing": 379,
+    "balanced": true
+  },
+  "theme_mechanism": {
+    "local_storage": true,
+    "system_preference": true,
+    "pre_css_script": true
+  },
+  "overall": {
+    "html_pages": 8,
+    "local_resources_missing": 0,
+    "anchors_missing": 0,
+    "duplicate_ids": 0,
+    "missing_alt": 0,
+    "js_errors": 0,
+    "sql_queries_success": 24,
+    "sql_queries_total": 24,
+    "database_ok": 4
+  }
+}
